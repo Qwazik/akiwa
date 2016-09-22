@@ -1,0 +1,481 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$icon-100pgar-name: 'icon-100pgar';
+$icon-100pgar-x: 0px;
+$icon-100pgar-y: 0px;
+$icon-100pgar-offset-x: 0px;
+$icon-100pgar-offset-y: 0px;
+$icon-100pgar-width: 65px;
+$icon-100pgar-height: 65px;
+$icon-100pgar-total-width: 281px;
+$icon-100pgar-total-height: 236px;
+$icon-100pgar-image: '../img/icon-set.png';
+$icon-100pgar: (0px, 0px, 0px, 0px, 65px, 65px, 281px, 236px, '../img/icon-set.png', 'icon-100pgar', );
+$icon-adobe-name: 'icon-adobe';
+$icon-adobe-x: 221px;
+$icon-adobe-y: 85px;
+$icon-adobe-offset-x: -221px;
+$icon-adobe-offset-y: -85px;
+$icon-adobe-width: 34px;
+$icon-adobe-height: 34px;
+$icon-adobe-total-width: 281px;
+$icon-adobe-total-height: 236px;
+$icon-adobe-image: '../img/icon-set.png';
+$icon-adobe: (221px, 85px, -221px, -85px, 34px, 34px, 281px, 236px, '../img/icon-set.png', 'icon-adobe', );
+$icon-akiwa-name: 'icon-akiwa';
+$icon-akiwa-x: 135px;
+$icon-akiwa-y: 171px;
+$icon-akiwa-offset-x: -135px;
+$icon-akiwa-offset-y: -171px;
+$icon-akiwa-width: 37px;
+$icon-akiwa-height: 37px;
+$icon-akiwa-total-width: 281px;
+$icon-akiwa-total-height: 236px;
+$icon-akiwa-image: '../img/icon-set.png';
+$icon-akiwa: (135px, 171px, -135px, -171px, 37px, 37px, 281px, 236px, '../img/icon-set.png', 'icon-akiwa', );
+$icon-audits-name: 'icon-audits';
+$icon-audits-x: 126px;
+$icon-audits-y: 49px;
+$icon-audits-offset-x: -126px;
+$icon-audits-offset-y: -49px;
+$icon-audits-width: 47px;
+$icon-audits-height: 48px;
+$icon-audits-total-width: 281px;
+$icon-audits-total-height: 236px;
+$icon-audits-image: '../img/icon-set.png';
+$icon-audits: (126px, 49px, -126px, -49px, 47px, 48px, 281px, 236px, '../img/icon-set.png', 'icon-audits', );
+$icon-client-name: 'icon-client';
+$icon-client-x: 221px;
+$icon-client-y: 47px;
+$icon-client-offset-x: -221px;
+$icon-client-offset-y: -47px;
+$icon-client-width: 35px;
+$icon-client-height: 38px;
+$icon-client-total-width: 281px;
+$icon-client-total-height: 236px;
+$icon-client-image: '../img/icon-set.png';
+$icon-client: (221px, 47px, -221px, -47px, 35px, 38px, 281px, 236px, '../img/icon-set.png', 'icon-client', );
+$icon-copywrighting-name: 'icon-copywrighting';
+$icon-copywrighting-x: 221px;
+$icon-copywrighting-y: 0px;
+$icon-copywrighting-offset-x: -221px;
+$icon-copywrighting-offset-y: 0px;
+$icon-copywrighting-width: 35px;
+$icon-copywrighting-height: 47px;
+$icon-copywrighting-total-width: 281px;
+$icon-copywrighting-total-height: 236px;
+$icon-copywrighting-image: '../img/icon-set.png';
+$icon-copywrighting: (221px, 0px, -221px, 0px, 35px, 47px, 281px, 236px, '../img/icon-set.png', 'icon-copywrighting', );
+$icon-corpport-name: 'icon-corpport';
+$icon-corpport-x: 49px;
+$icon-corpport-y: 125px;
+$icon-corpport-offset-x: -49px;
+$icon-corpport-offset-y: -125px;
+$icon-corpport-width: 50px;
+$icon-corpport-height: 45px;
+$icon-corpport-total-width: 281px;
+$icon-corpport-total-height: 236px;
+$icon-corpport-image: '../img/icon-set.png';
+$icon-corpport: (49px, 125px, -49px, -125px, 50px, 45px, 281px, 236px, '../img/icon-set.png', 'icon-corpport', );
+$icon-design-name: 'icon-design';
+$icon-design-x: 99px;
+$icon-design-y: 125px;
+$icon-design-offset-x: -99px;
+$icon-design-offset-y: -125px;
+$icon-design-width: 50px;
+$icon-design-height: 45px;
+$icon-design-total-width: 281px;
+$icon-design-total-height: 236px;
+$icon-design-image: '../img/icon-set.png';
+$icon-design: (99px, 125px, -99px, -125px, 50px, 45px, 281px, 236px, '../img/icon-set.png', 'icon-design', );
+$icon-fb-name: 'icon-fb';
+$icon-fb-x: 256px;
+$icon-fb-y: 48px;
+$icon-fb-offset-x: -256px;
+$icon-fb-offset-y: -48px;
+$icon-fb-width: 14px;
+$icon-fb-height: 27px;
+$icon-fb-total-width: 281px;
+$icon-fb-total-height: 236px;
+$icon-fb-image: '../img/icon-set.png';
+$icon-fb: (256px, 48px, -256px, -48px, 14px, 27px, 281px, 236px, '../img/icon-set.png', 'icon-fb', );
+$icon-freeanaliz-name: 'icon-freeanaliz';
+$icon-freeanaliz-x: 174px;
+$icon-freeanaliz-y: 92px;
+$icon-freeanaliz-offset-x: -174px;
+$icon-freeanaliz-offset-y: -92px;
+$icon-freeanaliz-width: 44px;
+$icon-freeanaliz-height: 44px;
+$icon-freeanaliz-total-width: 281px;
+$icon-freeanaliz-total-height: 236px;
+$icon-freeanaliz-image: '../img/icon-set.png';
+$icon-freeanaliz: (174px, 92px, -174px, -92px, 44px, 44px, 281px, 236px, '../img/icon-set.png', 'icon-freeanaliz', );
+$icon-galka-name: 'icon-galka';
+$icon-galka-x: 28px;
+$icon-galka-y: 213px;
+$icon-galka-offset-x: -28px;
+$icon-galka-offset-y: -213px;
+$icon-galka-width: 26px;
+$icon-galka-height: 20px;
+$icon-galka-total-width: 281px;
+$icon-galka-total-height: 236px;
+$icon-galka-image: '../img/icon-set.png';
+$icon-galka: (28px, 213px, -28px, -213px, 26px, 20px, 281px, 236px, '../img/icon-set.png', 'icon-galka', );
+$icon-glob-name: 'icon-glob';
+$icon-glob-x: 174px;
+$icon-glob-y: 47px;
+$icon-glob-offset-x: -174px;
+$icon-glob-offset-y: -47px;
+$icon-glob-width: 45px;
+$icon-glob-height: 45px;
+$icon-glob-total-width: 281px;
+$icon-glob-total-height: 236px;
+$icon-glob-image: '../img/icon-set.png';
+$icon-glob: (174px, 47px, -174px, -47px, 45px, 45px, 281px, 236px, '../img/icon-set.png', 'icon-glob', );
+$icon-gplus-name: 'icon-gplus';
+$icon-gplus-x: 221px;
+$icon-gplus-y: 151px;
+$icon-gplus-offset-x: -221px;
+$icon-gplus-offset-y: -151px;
+$icon-gplus-width: 34px;
+$icon-gplus-height: 26px;
+$icon-gplus-total-width: 281px;
+$icon-gplus-total-height: 236px;
+$icon-gplus-image: '../img/icon-set.png';
+$icon-gplus: (221px, 151px, -221px, -151px, 34px, 26px, 281px, 236px, '../img/icon-set.png', 'icon-gplus', );
+$icon-graph-name: 'icon-graph';
+$icon-graph-x: 60px;
+$icon-graph-y: 65px;
+$icon-graph-offset-x: -60px;
+$icon-graph-offset-y: -65px;
+$icon-graph-width: 60px;
+$icon-graph-height: 60px;
+$icon-graph-total-width: 281px;
+$icon-graph-total-height: 236px;
+$icon-graph-image: '../img/icon-set.png';
+$icon-graph: (60px, 65px, -60px, -65px, 60px, 60px, 281px, 236px, '../img/icon-set.png', 'icon-graph', );
+$icon-grow-name: 'icon-grow';
+$icon-grow-x: 0px;
+$icon-grow-y: 171px;
+$icon-grow-offset-x: 0px;
+$icon-grow-offset-y: -171px;
+$icon-grow-width: 48px;
+$icon-grow-height: 42px;
+$icon-grow-total-width: 281px;
+$icon-grow-total-height: 236px;
+$icon-grow-image: '../img/icon-set.png';
+$icon-grow: (0px, 171px, 0px, -171px, 48px, 42px, 281px, 236px, '../img/icon-set.png', 'icon-grow', );
+$icon-in-name: 'icon-in';
+$icon-in-x: 256px;
+$icon-in-y: 0px;
+$icon-in-offset-x: -256px;
+$icon-in-offset-y: 0px;
+$icon-in-width: 25px;
+$icon-in-height: 24px;
+$icon-in-total-width: 281px;
+$icon-in-total-height: 236px;
+$icon-in-image: '../img/icon-set.png';
+$icon-in: (256px, 0px, -256px, 0px, 25px, 24px, 281px, 236px, '../img/icon-set.png', 'icon-in', );
+$icon-info-name: 'icon-info';
+$icon-info-x: 256px;
+$icon-info-y: 75px;
+$icon-info-offset-x: -256px;
+$icon-info-offset-y: -75px;
+$icon-info-width: 18px;
+$icon-info-height: 18px;
+$icon-info-total-width: 281px;
+$icon-info-total-height: 236px;
+$icon-info-image: '../img/icon-set.png';
+$icon-info: (256px, 75px, -256px, -75px, 18px, 18px, 281px, 236px, '../img/icon-set.png', 'icon-info', );
+$icon-inst-name: 'icon-inst';
+$icon-inst-x: 149px;
+$icon-inst-y: 125px;
+$icon-inst-offset-x: -149px;
+$icon-inst-offset-y: -125px;
+$icon-inst-width: 25px;
+$icon-inst-height: 25px;
+$icon-inst-total-width: 281px;
+$icon-inst-total-height: 236px;
+$icon-inst-image: '../img/icon-set.png';
+$icon-inst: (149px, 125px, -149px, -125px, 25px, 25px, 281px, 236px, '../img/icon-set.png', 'icon-inst', );
+$icon-knopka-name: 'icon-knopka';
+$icon-knopka-x: 221px;
+$icon-knopka-y: 119px;
+$icon-knopka-offset-x: -221px;
+$icon-knopka-offset-y: -119px;
+$icon-knopka-width: 32px;
+$icon-knopka-height: 32px;
+$icon-knopka-total-width: 281px;
+$icon-knopka-total-height: 236px;
+$icon-knopka-image: '../img/icon-set.png';
+$icon-knopka: (221px, 119px, -221px, -119px, 32px, 32px, 281px, 236px, '../img/icon-set.png', 'icon-knopka', );
+$icon-lidgen-name: 'icon-lidgen';
+$icon-lidgen-x: 126px;
+$icon-lidgen-y: 0px;
+$icon-lidgen-offset-x: -126px;
+$icon-lidgen-offset-y: 0px;
+$icon-lidgen-width: 48px;
+$icon-lidgen-height: 49px;
+$icon-lidgen-total-width: 281px;
+$icon-lidgen-total-height: 236px;
+$icon-lidgen-image: '../img/icon-set.png';
+$icon-lidgen: (126px, 0px, -126px, 0px, 48px, 49px, 281px, 236px, '../img/icon-set.png', 'icon-lidgen', );
+$icon-newspaper-name: 'icon-newspaper';
+$icon-newspaper-x: 65px;
+$icon-newspaper-y: 0px;
+$icon-newspaper-offset-x: -65px;
+$icon-newspaper-offset-y: 0px;
+$icon-newspaper-width: 61px;
+$icon-newspaper-height: 63px;
+$icon-newspaper-total-width: 281px;
+$icon-newspaper-total-height: 236px;
+$icon-newspaper-image: '../img/icon-set.png';
+$icon-newspaper: (65px, 0px, -65px, 0px, 61px, 63px, 281px, 236px, '../img/icon-set.png', 'icon-newspaper', );
+$icon-purse-name: 'icon-purse';
+$icon-purse-x: 0px;
+$icon-purse-y: 65px;
+$icon-purse-offset-x: 0px;
+$icon-purse-offset-y: -65px;
+$icon-purse-width: 60px;
+$icon-purse-height: 60px;
+$icon-purse-total-width: 281px;
+$icon-purse-total-height: 236px;
+$icon-purse-image: '../img/icon-set.png';
+$icon-purse: (0px, 65px, 0px, -65px, 60px, 60px, 281px, 236px, '../img/icon-set.png', 'icon-purse', );
+$icon-red-arr-name: 'icon-red-arr';
+$icon-red-arr-x: 174px;
+$icon-red-arr-y: 136px;
+$icon-red-arr-offset-x: -174px;
+$icon-red-arr-offset-y: -136px;
+$icon-red-arr-width: 43px;
+$icon-red-arr-height: 28px;
+$icon-red-arr-total-width: 281px;
+$icon-red-arr-total-height: 236px;
+$icon-red-arr-image: '../img/icon-set.png';
+$icon-red-arr: (174px, 136px, -174px, -136px, 43px, 28px, 281px, 236px, '../img/icon-set.png', 'icon-red-arr', );
+$icon-red-star-name: 'icon-red-star';
+$icon-red-star-x: 256px;
+$icon-red-star-y: 117px;
+$icon-red-star-offset-x: -256px;
+$icon-red-star-offset-y: -117px;
+$icon-red-star-width: 14px;
+$icon-red-star-height: 12px;
+$icon-red-star-total-width: 281px;
+$icon-red-star-total-height: 236px;
+$icon-red-star-image: '../img/icon-set.png';
+$icon-red-star: (256px, 117px, -256px, -117px, 14px, 12px, 281px, 236px, '../img/icon-set.png', 'icon-red-star', );
+$icon-rouble-name: 'icon-rouble';
+$icon-rouble-x: 256px;
+$icon-rouble-y: 24px;
+$icon-rouble-offset-x: -256px;
+$icon-rouble-offset-y: -24px;
+$icon-rouble-width: 22px;
+$icon-rouble-height: 24px;
+$icon-rouble-total-width: 281px;
+$icon-rouble-total-height: 236px;
+$icon-rouble-image: '../img/icon-set.png';
+$icon-rouble: (256px, 24px, -256px, -24px, 22px, 24px, 281px, 236px, '../img/icon-set.png', 'icon-rouble', );
+$icon-shester-name: 'icon-shester';
+$icon-shester-x: 172px;
+$icon-shester-y: 171px;
+$icon-shester-offset-x: -172px;
+$icon-shester-offset-y: -171px;
+$icon-shester-width: 39px;
+$icon-shester-height: 29px;
+$icon-shester-total-width: 281px;
+$icon-shester-total-height: 236px;
+$icon-shester-image: '../img/icon-set.png';
+$icon-shester: (172px, 171px, -172px, -171px, 39px, 29px, 281px, 236px, '../img/icon-set.png', 'icon-shester', );
+$icon-sites-sm-name: 'icon-sites-sm';
+$icon-sites-sm-x: 95px;
+$icon-sites-sm-y: 171px;
+$icon-sites-sm-offset-x: -95px;
+$icon-sites-sm-offset-y: -171px;
+$icon-sites-sm-width: 40px;
+$icon-sites-sm-height: 38px;
+$icon-sites-sm-total-width: 281px;
+$icon-sites-sm-total-height: 236px;
+$icon-sites-sm-image: '../img/icon-set.png';
+$icon-sites-sm: (95px, 171px, -95px, -171px, 40px, 38px, 281px, 236px, '../img/icon-set.png', 'icon-sites-sm', );
+$icon-sites-name: 'icon-sites';
+$icon-sites-x: 0px;
+$icon-sites-y: 125px;
+$icon-sites-offset-x: 0px;
+$icon-sites-offset-y: -125px;
+$icon-sites-width: 49px;
+$icon-sites-height: 46px;
+$icon-sites-total-width: 281px;
+$icon-sites-total-height: 236px;
+$icon-sites-image: '../img/icon-set.png';
+$icon-sites: (0px, 125px, 0px, -125px, 49px, 46px, 281px, 236px, '../img/icon-set.png', 'icon-sites', );
+$icon-triangle-name: 'icon-triangle';
+$icon-triangle-x: 270px;
+$icon-triangle-y: 48px;
+$icon-triangle-offset-x: -270px;
+$icon-triangle-offset-y: -48px;
+$icon-triangle-width: 8px;
+$icon-triangle-height: 6px;
+$icon-triangle-total-width: 281px;
+$icon-triangle-total-height: 236px;
+$icon-triangle-image: '../img/icon-set.png';
+$icon-triangle: (270px, 48px, -270px, -48px, 8px, 6px, 281px, 236px, '../img/icon-set.png', 'icon-triangle', );
+$icon-twitter-name: 'icon-twitter';
+$icon-twitter-x: 0px;
+$icon-twitter-y: 213px;
+$icon-twitter-offset-x: 0px;
+$icon-twitter-offset-y: -213px;
+$icon-twitter-width: 28px;
+$icon-twitter-height: 23px;
+$icon-twitter-total-width: 281px;
+$icon-twitter-total-height: 236px;
+$icon-twitter-image: '../img/icon-set.png';
+$icon-twitter: (0px, 213px, 0px, -213px, 28px, 23px, 281px, 236px, '../img/icon-set.png', 'icon-twitter', );
+$icon-vacancy-name: 'icon-vacancy';
+$icon-vacancy-x: 221px;
+$icon-vacancy-y: 177px;
+$icon-vacancy-offset-x: -221px;
+$icon-vacancy-offset-y: -177px;
+$icon-vacancy-width: 28px;
+$icon-vacancy-height: 23px;
+$icon-vacancy-total-width: 281px;
+$icon-vacancy-total-height: 236px;
+$icon-vacancy-image: '../img/icon-set.png';
+$icon-vacancy: (221px, 177px, -221px, -177px, 28px, 23px, 281px, 236px, '../img/icon-set.png', 'icon-vacancy', );
+$icon-vk-name: 'icon-vk';
+$icon-vk-x: 126px;
+$icon-vk-y: 97px;
+$icon-vk-offset-x: -126px;
+$icon-vk-offset-y: -97px;
+$icon-vk-width: 39px;
+$icon-vk-height: 22px;
+$icon-vk-total-width: 281px;
+$icon-vk-total-height: 236px;
+$icon-vk-image: '../img/icon-set.png';
+$icon-vk: (126px, 97px, -126px, -97px, 39px, 22px, 281px, 236px, '../img/icon-set.png', 'icon-vk', );
+$icon-white-star-name: 'icon-white-star - копия';
+$icon-white-star-x: 256px;
+$icon-white-star-y: 93px;
+$icon-white-star-offset-x: -256px;
+$icon-white-star-offset-y: -93px;
+$icon-white-star-width: 14px;
+$icon-white-star-height: 12px;
+$icon-white-star-total-width: 281px;
+$icon-white-star-total-height: 236px;
+$icon-white-star-image: '../img/icon-set.png';
+$icon-white-star-: (256px, 93px, -256px, -93px, 14px, 12px, 281px, 236px, '../img/icon-set.png', 'icon-white-star - копия', );
+$icon-white-star-name: 'icon-white-star';
+$icon-white-star-x: 256px;
+$icon-white-star-y: 105px;
+$icon-white-star-offset-x: -256px;
+$icon-white-star-offset-y: -105px;
+$icon-white-star-width: 14px;
+$icon-white-star-height: 12px;
+$icon-white-star-total-width: 281px;
+$icon-white-star-total-height: 236px;
+$icon-white-star-image: '../img/icon-set.png';
+$icon-white-star: (256px, 105px, -256px, -105px, 14px, 12px, 281px, 236px, '../img/icon-set.png', 'icon-white-star', );
+$icon-window-name: 'icon-window';
+$icon-window-x: 48px;
+$icon-window-y: 171px;
+$icon-window-offset-x: -48px;
+$icon-window-offset-y: -171px;
+$icon-window-width: 47px;
+$icon-window-height: 41px;
+$icon-window-total-width: 281px;
+$icon-window-total-height: 236px;
+$icon-window-image: '../img/icon-set.png';
+$icon-window: (48px, 171px, -48px, -171px, 47px, 41px, 281px, 236px, '../img/icon-set.png', 'icon-window', );
+$icon-yandex-name: 'icon-yandex';
+$icon-yandex-x: 174px;
+$icon-yandex-y: 0px;
+$icon-yandex-offset-x: -174px;
+$icon-yandex-offset-y: 0px;
+$icon-yandex-width: 47px;
+$icon-yandex-height: 47px;
+$icon-yandex-total-width: 281px;
+$icon-yandex-total-height: 236px;
+$icon-yandex-image: '../img/icon-set.png';
+$icon-yandex: (174px, 0px, -174px, 0px, 47px, 47px, 281px, 236px, '../img/icon-set.png', 'icon-yandex', );
+$spritesheet-width: 281px;
+$spritesheet-height: 236px;
+$spritesheet-image: '../img/icon-set.png';
+$spritesheet-sprites: ($icon-100pgar, $icon-adobe, $icon-akiwa, $icon-audits, $icon-client, $icon-copywrighting, $icon-corpport, $icon-design, $icon-fb, $icon-freeanaliz, $icon-galka, $icon-glob, $icon-gplus, $icon-graph, $icon-grow, $icon-in, $icon-info, $icon-inst, $icon-knopka, $icon-lidgen, $icon-newspaper, $icon-purse, $icon-red-arr, $icon-red-star, $icon-rouble, $icon-shester, $icon-sites-sm, $icon-sites, $icon-triangle, $icon-twitter, $icon-vacancy, $icon-vk, $icon-white-star-, $icon-white-star, $icon-window, $icon-yandex, );
+$spritesheet: (281px, 236px, '../img/icon-set.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

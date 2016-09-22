@@ -1,0 +1,434 @@
+extends _template
+
+block main
+	// ========== main-slider =============
+	.page__main-slider
+		.container.main-slider
+			.main-slider__slider
+				#mainSlider
+					.main-slider__item
+						.main-slider__text.fadeIn
+							strong Продвижение, поддержка и 
+							u разработка сайтов
+						.main-slider__image
+							.person.line
+								.name Дмитрий Горский
+								.spec Топ менеджер «Акива»
+							img(src="img/main-slider__man.png", alt="")
+					.main-slider__item
+						.main-slider__text
+							strong Продвижение, поддержка и 
+							u разработка сайтов
+						.main-slider__image
+							.person 
+								.name Дмитрий Горский
+								.spec Топ менеджер «Акива»
+							img(src="img/main-slider__man.png", alt="")
+					.main-slider__item
+						.main-slider__text
+							strong Продвижение, поддержка и 
+							u разработка сайтов
+						.main-slider__image
+							.person 
+								.name Дмитрий Горский
+								.spec Топ менеджер «Акива»
+							img(src="img/main-slider__man.png", alt="")
+			.main-slider__callback.callback-form
+				i.icon.icon-freeanaliz
+				.callback-form__header
+					strong Бесплатный анализ сайта
+					span Мы перезвоним в течении 30 минут
+				form(action="#")
+					input.input(type="text" placeholder="Ваше имя")
+					input.input(type="text" placeholder="Адрес вашего сайта")
+					input.input(type="text" placeholder="Телефон")
+					button.submit(type="submit") Отправить
+	// ========== main-slider end =========
+	// ========== service =========
+	.page__service
+		.container
+			.service.clearfix
+				.col-md-12
+					h2.service__header.big Услуги
+				.row.service__list
+					.col-md-4.col-sm-6.service__item-wrap: .service__item
+						.service__icon
+							i.icon.icon-grow
+						.service__name Продвижение сайтов
+						.service__body
+							ul
+								li: a(href="#") По позициям
+								li: a(href="#") По трафику
+					.col-md-4.col-sm-6.service__item-wrap: .service__item.mark
+						.service__icon
+							i.icon.icon-lidgen
+						.service__name Лидогенерация
+						.service__body
+							p СРА-маркетинг. Реклама, которой нет равных.
+					.col-md-4.col-sm-6.service__item-wrap: .service__item
+						.service__icon
+							i.icon.icon-window
+						.service__name Интернет реклама
+						.service__body
+							ul
+								li: a(href="#") Контекстная
+								li: a(href="#") Медийная
+					.col-md-4.col-sm-6.service__item-wrap: .service__item
+						.service__icon
+							i.icon.icon-glob
+						.service__name Веб-аналитики
+						.service__body
+							ul
+								li: a(href="#") Call Tracking
+								li: a(href="#") веб-аналитика
+					.col-md-4.col-sm-6.service__item-wrap: .service__item
+						.service__icon
+							i.icon.icon-audits
+						.service__name Аудиты
+						.service__body
+							ul
+								li: a(href="#") А/Б тестирование
+								li: a(href="#") юзабилити аудит
+								li: a(href="#") seo-аудит
+					.col-md-4.col-sm-6.service__item-wrap: .service__item
+						.service__icon
+							i.icon.icon-copywrighting
+						.service__name Копирайтинг
+						.service__body
+							ul
+								li: a(href="#") нейминг
+								li: a(href="#") креатив
+					.col-md-4.col-sm-6.service__item-wrap: .service__item
+						.service__icon
+							i.icon.icon-sites
+						.service__name Создание сайтов
+						.service__body
+							ul
+								li.w100: a(href="#") корпоративные сайты
+								li: a(href="#") интернет-магазины          
+								li: a(href="#") landing page
+								li: a(href="#") мобильные версии         
+								li: a(href="#") адаптивный дизайн
+					.col-md-4.col-sm-6.service__item-wrap: .service__item
+						.service__icon
+							i.icon.icon-corpport
+						.service__name Корпоративные порталы
+						.service__body
+							p Любой сложности и их дальнейшее сопровождение
+					.col-md-4.col-sm-6.service__item-wrap: .service__item
+						.service__icon
+							i.icon.icon-design
+						.service__name Дизайн
+						.service__body
+							ul
+								li: a(href="#") логотипы         
+								li: a(href="#") полиграфия        
+								li: a(href="#") брендбук
+								li: a(href="#") презентации
+			.service-buttons
+				.col-md-4.col-sm-6.bdr
+					a(href="").btn.btn--thin 
+						i.icon.icon-adobe
+						span Скачать прайс-лист
+				.col-md-8.col-sm-6
+					a(href="").btn.btn--thin.presentation
+						i.icon.icon-akiwa
+						span Скачать презентацию
+						p.desc Узнайте о нас и нашей работе!
+	// ========== service end =========
+	// ========== team  =========
+	.page__team
+		.container
+			.team.clearfix
+				.big-header.clearfix
+					h2.big Команда
+					a(href="#").vacancy.right
+						i.icon.icon-vacancy
+						span Есть вакансии!
+				.row
+					.col-md-6.relative
+						.team__item.big.clearfix
+							.inner
+								.image
+									img(src="img/team1.png", alt="")
+								.text
+									.name Александр Балаганов
+									.spec Руководитель Akiwa
+									.desc.line.line--left Основная миссия нашего<br>коллектива — организация сервиса одного окна. 
+									a(href="").btn.btn--red Узнать больше о нас
+					.col-md-6
+						.team__item.clearfix
+							.text
+								.name Дмитрий Горский
+								.spec Топ менеджер
+								p.desc
+									span.num + 12
+									span.red Вежливых и компетентных менеджеров 
+									| в 7 городах России
+							.image
+								img(src="img/team2.png", alt="")
+						.team__item.clearfix
+							.image
+								img(src="img/team3.png", alt="")
+							.text
+								.name Ситанислав Борисенко
+								.spec Глава техподдержки
+								p.desc.line.line--left
+									span.red Я знаю все о техническом сопровождении сайтов
+							.support-callback
+								form(action="")
+									p Попросить техподдержку связаться с Вами
+									input.input(type="text" placeholder="Ваш телефон")
+									input(type="submit" value="Отправить заявку").btn.btn--brg
+					
+			.team-footer.clearfix
+				.team-footer__item
+					.image
+						img(src="img/team4.png", alt="")
+					.text.line.line--left
+						.name Сергей Лобановский
+						.spec Гуру продвижения сайтов
+				.team-footer__item
+					.image
+						img(src="img/team5.png", alt="")
+					.text.line.line--left
+						.name Виктор Ковалев
+						.spec Ведущий программист
+				.team-footer__item
+					.image
+						img(src="img/team6.png", alt="")
+					.text.line.line--left
+						.name Алиса Крамер
+						.spec Арт директор
+				.team-footer__more.team-footer__item
+					img(src="img/team-footer__mans.png", alt="")
+					.num <span>+</span>86
+					p специалистов в области продвижения, поддержки и разработки сайтов в России
+			.col-md-12.ta-center
+				a(href="#").btn.btn--default Больше о нас							
+	// ========== team end =========
+	// ========== achivements =========
+	.page__achivements
+		.container
+			h2.big Достижения
+			.achivements
+				include includes/achivements-item
+				include includes/achivements-item
+				include includes/achivements-item
+			.achivements-controls#achivementsControls
+				a(href="#").prev: img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAvCAYAAAD9/drQAAACeUlEQVRYR7XY7UtUQRQG8OexT4X/W1gpkqRoJiISEhERJUSGRBQRFWGlqUhERfQiZfRfBWUv9sRZzo3Z8e7eO/fOzrdld+e3Z+7MmXOWGNCQNAfgHoBdkqMchCNpHsAjADb/PoBj2SFJCwAeOPIXwFmSz7NCkhYB3HfkAMA5khu2atkgSef9mdichlgkm8WjyQJJWgJwN4hkhuRW+PxbQ5IuALjjk1ok0yS3403WCpJ0EcDtAJkiuVO2kxtDki4BuBUgZ0i+6HVcGkGSLgNYDZAJki/7nclkSNIVADd90j8ATpN8VXXwk6AI+e3I6yok6RxJugrghk/6y5E3dZDakKRlANcDZJzk27pILUiSAQbZsEjGSL5LQSohSbZUtmQFcorkh1SkLyTJdpbtsNZIT0iSnRE7KwVyguRuk0iK7xza3pLstNupt/ETwAjJT22QQxFJsrxl+cuG3YyGfG6LdEGSLANbJrbxw5G9HMh/KEK+O/IlF9KBogdvyHGSX3MiBfQNwLBPfI3kSm6kgML0km2XxT+2s71LMkDrc1MKORbntJMkP+Zaxq4DW5KlG+e2nhEVb5TcO42ydSXkyxhfcsn3Ty3IsbA2SL5Ra0OOhdVOUo2QBDkW1m+1q55kyLG4Iq2s4xpBjsU1dt/KtDHkWNw19Ky1W0GOxX1QaffQGnIs7uy6mq6ytJVUEocTRL1qVxuZFfLI4sbYetb17JBjYasvALNlWOOli5bR/rx47D2sYXMkn4afyQJ5ZLMA1gJsnqS97oxskGMzAJ4AGLKLG8ACSYs0L+TYtGNHHOtEljWiYpkkTQF4BsAwu2KODgTyyCYAPATwnuTkPwpDFTyj2shcAAAAAElFTkSuQmCC", alt="")
+				.achivements-controls__info
+					span Достижение
+					span.position-num 3
+				a(href="#").next: img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAvCAYAAAAWymHTAAACM0lEQVRYR7XYWWtUQRCG4fdz1xv/lQsqKm6IuN2JirjFEEIIDEMIMYiIGHFFxBW3n+aF95/0UBN6zsxkztLpq2EO1EOdpauqZfsVcB54KOkN27Bk+y9wEDBwU9LL0k5CrgFvgR0B3Zb0oiSkFMz2deA1sHM7oAES0NXIaAjdkfS8REabSEBXgHdZRnclPesKjSABXQbeZ9B9SU+7QGNIQJeADwGlvx5IetIWmogEdBH4mEFzktbbQFORgC4AnzLokaTHTaEtkYDOAZ+BXRF8XtJaE2gmEtBZ4EsGLUharQvVQjIoZbQ7gi9KWqkD1UYCOhO3bk8EX5LUnwU1QgI6DXwFhtCypN5WUGMkoJPA9wzqSVqeBrVCAjoB/KgDtUYCOg78zKC+pKVqRp2QgI4BvzJoRdJiDnVGAjoK/Ab2RvBVSQtDqAgS0JGA9kXwNUnz6XcxJKDDAe0PaF3SXFEkoEMBHQioXxwJKD344U7wrzhiu3rLekUR29WHP3jLiiEB/Jn0GhdBbFe/k5EPsjNiu/rFj20tnRDbtTbJ1ojt6nY/ta60QmyfAr5lm+KWFbIxYrtaGWeW4EaI7WqNr9VM1EZsp7Yo71Zqt0W1ENudGryZiO00T6YM0tySVuOeuGkv3Kq7b9LVtwKmVkbb+XySpuJOg9BYJrark1bnkW4Esb0tw+kmMgEoNs8PkAlz/C1JG7O69brXJ51IFD/6qJ6t3JCUDnSKroSkk6G0L92TlOb34us/o1v3Hg5tOoYAAAAASUVORK5CYII=", alt="")
+	// ========== achivements end =========
+	// ========== shema =========
+	.page__shema
+		.container
+			h2.big Схема работы
+
+			.shema
+				.shema__item.shema__item--1 
+					img(src="img/shema-item1.png", alt="")
+					span 1
+					.tooltip Разработка уникольной стратегии продвижения
+				.shema__item.shema__item--2 
+					img(src="img/shema-item2.png", alt="")
+					span 2
+					.tooltip.tooltip--bottom Подбор релевантного списка запросов
+				.shema__item.shema__item--3 
+					img(src="img/shema-item3.png", alt="")
+					span 3
+					.tooltip Оптимизация дизайна, структуры и контента сайта
+				.shema__item.shema__item--4 
+					img(src="img/shema-item4.png", alt="")
+					span 4
+					.tooltip.tooltip--bottom Работа по наращиванию эффективной ссылочной массы
+				.shema__item.shema__item--5 
+					img(src="img/shema-item5.png", alt="")
+					span 5
+					.tooltip Анализ алгоритмов ПС, мониторинг позиций
+				.shema__item.shema__item--6 
+					img(src="img/shema-item6.png", alt="")
+					span 6
+					.tooltip.tooltip--bottom Корректировка стратегии продвижения
+				.shema__item.shema__item--7 
+					img(src="img/shema-item7.png", alt="")
+					span 7
+					.tooltip Успех гарантирован. Ваш сайт в ТОПе!
+			.shema-bottom
+				.manager-callback
+					span Есть вопросы ?
+					img(src="img/manager-callback.png", alt="")
+					a(href="#") Я отвечу на <br> любой!
+				a(href="#").btn.btn--red.fl-right Хочу заказать продвижение
+	// ========== shema end =========
+	// ========== clients  =========
+	.page__clients
+		.container
+			.big-header.clearfix
+				h2.big Клиенты
+				a(href="#").btn.btn--red.right Отзывы клиентов
+			.clients#clientsCarousel
+				.client__item: img(src="img/client1.jpg", alt="")
+				.client__item: img(src="img/client2.jpg", alt="")
+				.client__item: img(src="img/client3.jpg", alt="")
+				.client__item: img(src="img/client4.jpg", alt="")
+				.client__item: img(src="img/client5.jpg", alt="")
+				.client__item: img(src="img/client6.jpg", alt="")
+				.client__item: img(src="img/client7.jpg", alt="")
+				.client__item: img(src="img/client8.jpg", alt="")
+				.client__item: img(src="img/client9.jpg", alt="")
+				.client__item: img(src="img/client1.jpg", alt="")
+				.client__item: img(src="img/client2.jpg", alt="")
+				.client__item: img(src="img/client3.jpg", alt="")
+				.client__item: img(src="img/client4.jpg", alt="")
+				.client__item: img(src="img/client5.jpg", alt="")
+				.client__item: img(src="img/client6.jpg", alt="")
+				.client__item: img(src="img/client7.jpg", alt="")
+				.client__item: img(src="img/client8.jpg", alt="")
+				.client__item: img(src="img/client9.jpg", alt="")
+				.client__item: img(src="img/client1.jpg", alt="")
+				.client__item: img(src="img/client2.jpg", alt="")
+				.client__item: img(src="img/client3.jpg", alt="")
+				.client__item: img(src="img/client4.jpg", alt="")
+				.client__item: img(src="img/client5.jpg", alt="")
+				.client__item: img(src="img/client6.jpg", alt="")
+				.client__item: img(src="img/client7.jpg", alt="")
+				.client__item: img(src="img/client8.jpg", alt="")
+				.client__item: img(src="img/client9.jpg", alt="")
+				.client__item: img(src="img/client1.jpg", alt="")
+				.client__item: img(src="img/client2.jpg", alt="")
+				.client__item: img(src="img/client3.jpg", alt="")
+				.client__item: img(src="img/client4.jpg", alt="")
+				.client__item: img(src="img/client5.jpg", alt="")
+				.client__item: img(src="img/client6.jpg", alt="")
+				.client__item: img(src="img/client7.jpg", alt="")
+				.client__item: img(src="img/client8.jpg", alt="")
+				.client__item: img(src="img/client9.jpg", alt="")
+				.client__item: img(src="img/client1.jpg", alt="")
+				.client__item: img(src="img/client2.jpg", alt="")
+				.client__item: img(src="img/client3.jpg", alt="")
+				.client__item: img(src="img/client4.jpg", alt="")
+				.client__item: img(src="img/client5.jpg", alt="")
+				.client__item: img(src="img/client6.jpg", alt="")
+				.client__item: img(src="img/client7.jpg", alt="")
+				.client__item: img(src="img/client8.jpg", alt="")
+				.client__item: img(src="img/client9.jpg", alt="")
+				.client__item: img(src="img/client1.jpg", alt="")
+				.client__item: img(src="img/client2.jpg", alt="")
+				.client__item: img(src="img/client3.jpg", alt="")
+				.client__item: img(src="img/client4.jpg", alt="")
+				.client__item: img(src="img/client5.jpg", alt="")
+				.client__item: img(src="img/client6.jpg", alt="")
+				.client__item: img(src="img/client7.jpg", alt="")
+				.client__item: img(src="img/client8.jpg", alt="")
+				.client__item: img(src="img/client9.jpg", alt="")
+			.clients-controls
+				.min 6
+				.clients-slider__wrap
+					.clients-slider
+				.max 100
+			.ta-center
+				a(href="#").btn.btn--default Все клиенты
+	// ========== clients end =========
+	// ========== news =================
+	.page__news
+		.container
+			.news__main-header
+				i.icon.icon-newspaper
+				a(href="#") Еще новости
+			.news.clearfix
+				.col-md-4.news__item-wrap.akcia: .news__item
+					.news__akcia Акива акция!
+					.news__header При создании сайта поддержка и продвижение в течении 3х месяцев бесплатно!
+					.news__footer.clearfix
+						.news__date Только до 30.10.2016
+				.col-md-4.news__item-wrap: .news__item.akcia
+					a(href="#").news__header Яндекс.Вебмастер будет информировать пользователей об использовании кликджекинга на сайтах
+					.news__body
+						p Как сообщает Яндекс в своём блоге для вебмастеров, в ближайшее время сервис Яндекс.Вебмастер начнёт предупреждать об использовании на сайтах технологии ...
+					.news__footer.clearfix
+						.news__date 30.08.2016
+				.col-md-4.news__item-wrap: .news__item.akcia
+					a(href="#").news__header Russian Interactive Week 2015
+					.news__body
+						p Главное осеннее мероприятие сразу четырех отраслей (Интернет, Медиа, Телеком и Софт) прошло в октябре этого года в Москве, на площадке Экспоцентра ...
+					.news__footer.clearfix
+						.news__date 23.08.2016
+			.subscribe.clearfix
+				.subscribe__left
+					p.title Оформить подписку
+					span.desc Получайте уведомления о новостях и акциях <br> себе на почту
+				.subscribe__right
+					form(action="#")
+						input(type="text" placeholder="Ваше имя").subscribe__input
+						input(type="text" placeholder="Email").subscribe__input
+						input(type="submit" value="Подписаться").subscribe__submit
+	// ========== news end =================
+	// ========== prices =================
+	.page__prices
+		.container
+			h2.big <span>Цены</span> и гарантии
+			.prices
+				.row
+					.col-md-4
+						.prices__header
+							.prices__icon
+								i.icon.icon-purse
+							span Стоимость работ по продвижению
+						.prices__body
+							.price-block.red
+								span Продвижение сайта по России
+								span от
+								b 50 000
+								i.icon.icon-rouble
+							.price-block.orange
+								span Продвижение сайта по России
+								span от
+								b 35 000
+								i.icon.icon-rouble
+							.price-block.green
+								span Продвижение сайта по России
+								span от 
+								b 30 000
+								i.icon.icon-rouble
+						.prices__footer
+							
+							p
+								i.icon.icon-info
+								| Затраты на продвижение окупаются уже через месяц 	сотрудничества, а бывает и раньше!
+					.col-md-4
+						
+							.prices__header
+								.prices__icon
+									i.icon.icon-graph
+								span Результат поисковой оптимизации
+							.prices__body.result
+								.result-top.clearfix
+									.month
+										span 3-4
+										span месяца
+									i.icon.icon-red-arr
+									.top
+										span топ
+										span 10
+								.result-body
+									p Первые результаты работы видны уже через несколько недель с момента запуска рекламной кампании, чему способствует проведенная внутренняя оптимизация. 
+									p Основных результатов поискового продвижения сайта стоит ожидать 3-4 месяца, именно столько времени потребуется на вывод основных запросов в топ 10.
+					.col-md-4
+						.prices__header
+							.prices__icon
+								i.icon.icon-100pgar
+							span Гарантия результата
+						.prices__body.warranty
+							.warranty__row
+								i.icon.icon-galka
+								p Мы гарантируем, взяв ваш сайт на продвижение, количество заявок и звонков с сайта вырастет в несколько раз! 
+							.warranty__row
+								i.icon.icon-galka
+								p Всем своим клиентам мы даём финансовые и юридических гарантии, прописанные в <a href="#">нашем договоре</a>. 
+							.warranty__row
+								i.icon.icon-galka
+								p Если эффективность рекламной кампании окажется ниже заявленной, мы вернём деньги или предложим бесплатную альтернативную замену.
+	// ========== prices end =================

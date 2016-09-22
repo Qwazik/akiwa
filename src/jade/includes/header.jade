@@ -1,0 +1,58 @@
+header.page__header.main-header
+	.container
+		.main-header__left
+			.logo
+				a(href="/"): img(src="img/logo-dark.svg", alt="")
+		.main-header__center
+			.main-header__buttons
+				a(href="#").btn.btn--red.btn--achivements
+					i.icon.icon-white-star
+					span Наши достижения
+				a(href="#").btn.btn--default.fl-right 
+					span Заказать звонок
+			.main-header__menu
+				ul
+					li: a(href="#") О компании
+					li: a(href="#") Отзывы
+					li: a(href="#") Новости
+					li: a(href="#") Контакты
+		.main-header__right
+				.phones
+					p.lightgray.small Бесплатно по России
+					p.main-header__phone.red 8 800 200 47 80
+				.city
+					.city__header
+						a(href="#").small.city__choise Москва
+						.city__list
+							.city__close x
+							ul
+								li: a(href="#cityMoscow") Москва
+								li: a(href="#cityBryansk") Брянск
+								li: a(href="#cityTorgok") Торжок
+					.city__body#cityMoscow.active
+						p.main-header__phone 8 (499) 404 03 96
+						br
+						p Пн — Пт:  10:00 — 19:00
+					.city__body#cityBryansk
+						p.main-header__phone 8 (111) 404 03 96
+						br
+						p Пн — Пт:  10:00 — 19:00
+					.city__body#cityTorgok
+						p.main-header__phone 8 (222) 404 03 96
+						br
+						p Пн — Пт:  10:00 — 19:00
+	.main-menu
+		.container
+			.responsive-menu
+					span
+					span
+					span
+			ul
+				li: a(href="#") Продвижение сайтов
+				li: a(href="#") Социальный маркетинг
+				li: a(href="#") Контекстная реклама
+				li: a(href="#") Аналитика и аудит
+				li: a(href="#") Сопровождение сайтов
+				li: a(href="#") Стоимость услуг
+
+
