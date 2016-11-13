@@ -1,0 +1,187 @@
+extends _template
+
+block main
+		.design-wrap
+			.breadcumbs
+				.container
+					ul
+						li: a(href="#") Главная 
+						li: a(href="#") Типовая страница 
+			.inner__main.nopadding
+				.container
+					.row
+						.col-md-3
+							.over-block
+								include includes/left-menu
+						.col-md-9
+							.main__content
+								.inner__header
+									h1 Дизайн сайтов
+								.mb-60
+									p Разработка фирменного стиля как важнейшего элемента деятельности любого предприятия, организации или компании – это совокупность дизайнерских приемов, способствующих росту популярности и узнаваемости компании на рынке товаров/услуг. 
+									p От фирменного стиля зависит то, как фирма будет восприниматься на рынке – её имидж. Фирменный стиль компании незаменим при проведении рекламных кампаний.
+				.features.clearfix
+					.container
+						.row
+							.col-md-3
+							.col-md-9
+								.features__list.clearfix
+									.row
+										.col-sm-4.features__column
+											.features__item
+												.features__image
+													img(src="img/design-b1.png", alt="")
+												span.features__name Дизайн сайтов
+										.col-sm-4.features__column
+											.features__item
+												.features__image
+													img(src="img/design-b2.png", alt="")
+												span.features__name Логотипы
+										.col-sm-4.features__column
+											.features__item
+												.features__image
+													img(src="img/design-b3.png", alt="")
+												span.features__name Полиграфия
+										.col-sm-4.features__column
+											.features__item
+												.features__image
+													img(src="img/design-b4.png", alt="")
+												span.features__name Брендбук
+										.col-sm-4.features__column
+											.features__item
+												.features__image
+													img(src="img/design-b5.png", alt="")
+												span.features__name Презентации
+										.col-sm-4.features__column
+											.features__item
+												a(href="#").btn.btn--red Примеры работ
+		.tarifs__wrap												
+			.container
+				.row
+					.col-md-3
+					.col-md-9
+							.tarifs.big-padding
+								h2.medium Тарифы
+								.tarifs__list
+									.tarifs__item.text-section
+										.text-section__centered
+											.text-section__image
+												img(src="img/design-tarif1.png", alt="")
+											.text-section__text
+												.tarifs__header
+													a(href="#") Дизайн сайтов и логотипов
+												.tarifs__body
+													ul.ul.ul--circle
+														li Дизайн сайтов любой сложности и тематики.
+														li Уникальные, запоминающиеся логотипы
+												.tarifs__footer
+													.price
+														| от
+														span.val 3 000 ₽
+													a(href="#").btn.btn--red Отправить заявку
+									.tarifs__item.text-section.mark
+										.text-section__centered
+											.text-section__image
+												img(src="img/design-tarif2.png", alt="")
+											.text-section__text
+												.tarifs__header
+													a(href="#") Айдентика и презентации
+												.tarifs__body
+													ul.ul.ul--circle
+														li Брендбук - официальный документ компании, в котором описывается концепция бренда.
+														li Презентации -  pdf презентации для любых целей.
+												.tarifs__footer
+													.price
+														| от
+														span.val 7 000 ₽
+													a(href="#").btn.btn--red Отправить заявку
+									.tarifs__item.text-section
+										.text-section__centered
+											.text-section__image
+												img(src="img/design-tarif3.png", alt="")
+											.text-section__text
+												.tarifs__header
+													a(href="#") Полиграфия и допечатная подготовка
+												.tarifs__body
+													p Разработка дизайна полиграфической продукции – это важнейшее звено в построении механизмов эффективных продаж и повышении уровня лояльности клиентов. Качественный дизайн полиграфии является залогом успеха любой рекламной компании. 
+												.tarifs__footer
+													.price
+														| от
+														span.val 6 000 ₽
+													a(href="#").btn.btn--red Отправить заявку
+		.prodv-works.clearfix.big-padding
+			.container
+				.row
+					.col-md-3
+					.col-md-9
+						h2.medium Примеры работ
+						.design-slider__wrap
+							
+							.design-slider
+								.design-slider__item
+									.labels-container
+										.label.label--red Дизайн сайта
+										.label.label--darkorange Логотип
+										.label.label--violet Брендбук
+									.image
+										img(src="img/design-slider1.png", alt="")
+									.bottom
+										span Автопрокат «FIDESCARS»
+										a(href="#") www.arendaavtopraga.ru
+								.design-slider__item
+									.labels-container
+										.label.label--red Дизайн сайта
+										.label.label--darkorange Логотип
+										.label.label--violet Брендбук
+									.image
+										img(src="img/design-slider1.png", alt="")
+									.bottom
+										span Автопрокат «FIDESCARS»
+										a(href="#") www.arendaavtopraga.ru
+								.design-slider__item
+									.labels-container
+										.label.label--red Дизайн сайта
+										.label.label--darkorange Логотип
+										.label.label--violet Брендбук
+									.image
+										img(src="img/design-slider1.png", alt="")
+									.bottom
+										span Автопрокат «FIDESCARS»
+										a(href="#") www.arendaavtopraga.ru
+							.design-controls#designControls
+								a(href="#").prev: img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAvCAYAAAD9/drQAAACeUlEQVRYR7XY7UtUQRQG8OexT4X/W1gpkqRoJiISEhERJUSGRBQRFWGlqUhERfQiZfRfBWUv9sRZzo3Z8e7eO/fOzrdld+e3Z+7MmXOWGNCQNAfgHoBdkqMchCNpHsAjADb/PoBj2SFJCwAeOPIXwFmSz7NCkhYB3HfkAMA5khu2atkgSef9mdichlgkm8WjyQJJWgJwN4hkhuRW+PxbQ5IuALjjk1ok0yS3403WCpJ0EcDtAJkiuVO2kxtDki4BuBUgZ0i+6HVcGkGSLgNYDZAJki/7nclkSNIVADd90j8ATpN8VXXwk6AI+e3I6yok6RxJugrghk/6y5E3dZDakKRlANcDZJzk27pILUiSAQbZsEjGSL5LQSohSbZUtmQFcorkh1SkLyTJdpbtsNZIT0iSnRE7KwVyguRuk0iK7xza3pLstNupt/ETwAjJT22QQxFJsrxl+cuG3YyGfG6LdEGSLANbJrbxw5G9HMh/KEK+O/IlF9KBogdvyHGSX3MiBfQNwLBPfI3kSm6kgML0km2XxT+2s71LMkDrc1MKORbntJMkP+Zaxq4DW5KlG+e2nhEVb5TcO42ydSXkyxhfcsn3Ty3IsbA2SL5Ra0OOhdVOUo2QBDkW1m+1q55kyLG4Iq2s4xpBjsU1dt/KtDHkWNw19Ky1W0GOxX1QaffQGnIs7uy6mq6ytJVUEocTRL1qVxuZFfLI4sbYetb17JBjYasvALNlWOOli5bR/rx47D2sYXMkn4afyQJ5ZLMA1gJsnqS97oxskGMzAJ4AGLKLG8ACSYs0L+TYtGNHHOtEljWiYpkkTQF4BsAwu2KODgTyyCYAPATwnuTkPwpDFTyj2shcAAAAAElFTkSuQmCC", alt="")
+								.design-controls__info
+									span Работа
+									span.position-num 3
+								a(href="#").next: img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAvCAYAAAAWymHTAAACM0lEQVRYR7XYWWtUQRCG4fdz1xv/lQsqKm6IuN2JirjFEEIIDEMIMYiIGHFFxBW3n+aF95/0UBN6zsxkztLpq2EO1EOdpauqZfsVcB54KOkN27Bk+y9wEDBwU9LL0k5CrgFvgR0B3Zb0oiSkFMz2deA1sHM7oAES0NXIaAjdkfS8REabSEBXgHdZRnclPesKjSABXQbeZ9B9SU+7QGNIQJeADwGlvx5IetIWmogEdBH4mEFzktbbQFORgC4AnzLokaTHTaEtkYDOAZ+BXRF8XtJaE2gmEtBZ4EsGLUharQvVQjIoZbQ7gi9KWqkD1UYCOhO3bk8EX5LUnwU1QgI6DXwFhtCypN5WUGMkoJPA9wzqSVqeBrVCAjoB/KgDtUYCOg78zKC+pKVqRp2QgI4BvzJoRdJiDnVGAjoK/Ab2RvBVSQtDqAgS0JGA9kXwNUnz6XcxJKDDAe0PaF3SXFEkoEMBHQioXxwJKD344U7wrzhiu3rLekUR29WHP3jLiiEB/Jn0GhdBbFe/k5EPsjNiu/rFj20tnRDbtTbJ1ojt6nY/ta60QmyfAr5lm+KWFbIxYrtaGWeW4EaI7WqNr9VM1EZsp7Yo71Zqt0W1ENudGryZiO00T6YM0tySVuOeuGkv3Kq7b9LVtwKmVkbb+XySpuJOg9BYJrark1bnkW4Esb0tw+kmMgEoNs8PkAlz/C1JG7O69brXJ51IFD/6qJ6t3JCUDnSKroSkk6G0L92TlOb34us/o1v3Hg5tOoYAAAAASUVORK5CYII=", alt="")
+						.prodv-works__footer
+							.projects-col
+								span 203
+								span креативных проекта
+							a(href="#").btn.btn--red Статистика других клиентов
+		.interesting__wrap.dark.big-padding
+			.container
+				.row
+					.col-md-3
+					.col-md-9
+						.clearfix
+							.h2-wrap.clearfix
+								.column
+									h2.medium Интересное в блоге
+								.column.ta-right
+									a(href="#").btn.btn--default
+										span Перейти в блог
+							include includes/interesting
+		.big-padding
+			.container
+				.row
+					.col-md-3
+					.col-md-9
+						include includes/main-form
+
+
+
+
+
+
+

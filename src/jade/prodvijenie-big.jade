@@ -1,0 +1,255 @@
+extends _template
+
+block main
+	.breadcumbs
+		.container
+			ul
+				li: a(href="#") Главная 
+				li: a(href="#") Типовая страница 
+	.inner__main.nopadding
+		.container
+			.row
+				.col-md-3
+					.over-block
+						include includes/left-menu
+				.col-md-9
+					.main__content
+						.inner__header
+							h1 Продвижение сайтов
+						.mb-60
+							p Специалисты компании «Акива» работают на рынке поискового продвижения с 2008 года. В настоящий момент  поисковая оптимизация является основной услугой предоставляемой нашей компанией.  Мы убеждены, что профессиональный подход к продвижению сайта и тесное взаимодействие с клиентом способны увеличить продажи через интернет-канал практически любой компании.
+		.features.clearfix
+			.container
+				.row
+					.col-md-3
+					.col-md-9
+						h2.big Почему мы ?
+						.features__list.clearfix
+							.row
+								.col-sm-4.features__column
+									.features__item.mark
+										.features__image
+											img(src="img/prodv-fetures1.png", alt="")
+										span.features__name Стабильность
+										span.features__body 10 лет на рынке интернет-технологий
+								.col-sm-4.features__column
+									.features__item
+										.features__image
+											img(src="img/prodv-fetures2.png", alt="")
+										span.features__name Адекватные цены
+										span.features__body Для каждого сайта индивидуально рассчитываем стоимость вывода того или иного слова, не завышаем бюджет.
+								.col-sm-4.features__column
+									.features__item
+										.features__image
+											img(src="img/prodv-fetures3.png", alt="")
+										span.features__name Индивидуальное обслуживание
+										span.features__body Каждый клиент нашей компании обладает своим персональным менеджером, который расскажет все новости и детали в любое удобное для Вас время.
+								.col-sm-4.features__column
+									.features__item
+										.features__image
+											img(src="img/prodv-fetures4.png", alt="")
+										span.features__name Контроль эффективности нашей работы
+										span.features__body Мы представляем отчёт о проделанной нами работе ежемесячно.  У вас есть возможность режиме online контролировать результаты продвижения.
+								.col-sm-4.features__column
+									.features__item
+										.features__image
+											img(src="img/prodv-fetures5.png", alt="")
+										span.features__name Реальные сроки вывода
+										span.features__body При прогнозе не занижаем и не завышаем сроки, даём индивидуальный расклад по каждому поисковому запросу.
+								.col-sm-4.features__column
+									.features__item
+										.features__image
+											img(src="img/prodv-fetures6.png", alt="")
+										span.features__name Гарантия результата
+										span.features__body На свою работу мы даём юридические и финансовые гарантии, которые прописаны в нашем договоре.
+		.tarifs__wrap
+			.container
+				.row
+					.col-md-3
+					.col-md-9
+							.tarifs.big-padding
+								h2.medium Тарифы
+								.tarifs__list
+									.tarifs__item.text-section
+										.text-section__centered
+											.text-section__image
+												img(src="img/prod-tarif1.png", alt="")
+											.text-section__text
+												.tarifs__header
+													a(href="#") Продвижение сайта с оплатой за позиции
+												.tarifs__body
+													p Наши специалисты проанализируют ваш сайт и подберут список наиболее эффективных поисковых запросов для продвижения в Yandex и Google. Оплата осуществляется за нахожден…
+												.tarifs__footer
+													.price
+														| от
+														span.val 30 000 ₽
+														span.per месяц
+													a(href="#").btn.btn--red Отправить заявку
+									.tarifs__item.text-section.mark
+										.text-section__centered
+											.text-section__image
+												img(src="img/prod-tarif2.png", alt="")
+											.text-section__text
+												.tarifs__header
+													a(href="#") Продвижение сайта с оплатой за трафик
+												.tarifs__body
+													p Даёт возможность привлечь на сайт максимальное количество посетителей из поисковых систем по минимальной цене за переход. Данный тип продвижения подходит только …
+												.tarifs__footer
+													.price
+														| от
+														span.val 50 000 ₽
+														span.per месяц
+													a(href="#").btn.btn--red Отправить заявку
+									.tarifs__item.text-section
+										.text-section__centered
+											.text-section__image
+												img(src="img/prod-tarif3.png", alt="")
+											.text-section__text
+												.tarifs__header
+													a(href="#") Продвижение полноценных интернет магазинов
+												.tarifs__body
+													p Позволяет увеличить клиентскую базу путём продвижения больших групп поисковых запросов и постоянной работы по внутренней оптимизации сайта. Подходит только полн…
+												.tarifs__footer
+													.price
+														| от
+														span.val 60 000 ₽
+														span.per месяц
+													a(href="#").btn.btn--red Отправить заявку
+									.tarifs__item.text-section
+										.text-section__centered
+											.text-section__image
+												img(src="img/prod-tarif4.png", alt="")
+											.text-section__text
+												.tarifs__header
+													a(href="#") Продвижение молодых сайтов
+												.tarifs__body
+													p Если вы недавно создали свой сайт или ранее никогда не сталкивались с поисковой оптимизацией, мы поможем осуществить комплекс мер по подготовке и продвижению ваше…
+												.tarifs__footer
+													.price
+														| от
+														span.val 30 000 ₽
+														span.per месяц
+													a(href="#").btn.btn--red Отправить заявку
+		.prodv-works.clearfix.big-padding
+			.container
+				.row
+					.col-md-3
+					.col-md-9
+						h2.medium Результаты работы
+						.prodv-works__card
+							.prodv-works__header
+								.works-header
+									.works-header__left
+										span.works-header__name Союз 32
+										a(href="#").works-header__site www.soyz32.ru
+										span.works-header__desc Стоматологическая клиника «Союз» специализируется исключительно на оказании стоматологических услуг взрослому и детскому населению в Брянске, а также зуботехническом производстве.
+									.works-header__right
+										img(src="img/souz-logo.png", alt="")
+							.prodv-works__positions.clearfix
+								.achivements__text.achivements__city
+									span.name Брянск<br>
+									.label.label--black <span class="thin">Продвижение по</span> <b>72 запросам</b>
+								.achivements___row.position
+									.achivements__ico.va-middle
+										i.icon.icon-yandex
+									.achivements__text.va-middle
+										.position__row.clearfix
+											span.position__word Отбеливание зубов
+											span.position__pos 1
+										.position__row.clearfix
+											span.position__word Стоматологическая клиника
+											span.position__pos 2
+										.position__row.clearfix
+											span.position__word Стоматологические клиники в брянске
+											span.position__pos 5
+							.prodv-works__graph
+								img(src="img/prodv-graph.jpg", alt="")
+						.prodv-works__footer
+							.projects-col
+								span 286
+								span сайтов в продвижении
+							a(href="#").btn.btn--red Статистика других клиентов
+		.prodv-shema__wrap.big-padding
+			.container
+				.row
+					.col-md-3
+					.col-md-9
+						.clearfix
+							.h2-wrap.clearfix
+								.column
+									h2.medium Схема работы
+								.column.ta-right
+									.note Мы гарантируем, взяв ваш сайт на продвижение, количество заявок и звонков с сайта вырастет в несколько раз! 
+							.prodv-shema
+								.prodv-shema__top
+									img(src="img/prodv-shema-top.jpg", alt="")
+									span 3 - 4 месяца
+							.prodv-shema__shema
+								.prodv-shema__item
+									.top
+										.fill
+											span 1
+									.bottom 
+										span Разработка уникальной стратегии продвижения
+								.prodv-shema__item
+									.top
+										.fill
+											span 2
+									.bottom 
+										span Подбор релевантного списка запросов
+								.prodv-shema__item
+									.top
+										.fill
+											span 3
+									.bottom 
+										span Оптимизация дизайна, структуры и контента сайта
+								.prodv-shema__item
+									.top
+										.fill
+											span 4
+									.bottom 
+										span Работа по наращиванию эффективной ссылочной массы
+								.prodv-shema__item
+									.top
+										.fill
+											span 5
+									.bottom 
+										span Анализ алгоритмов ПС, мониторинг позиций
+								.prodv-shema__item
+									.top
+										.fill
+											span 6
+									.bottom 
+										span Корректировка стратегии продвижения
+								.prodv-shema__item
+									.top
+										.fill
+											span 7
+									.bottom 
+										span.color-red Выводим Ваш сайт в ТОП 10
+		.interesting__wrap.dark.big-padding
+			.container
+				.row
+					.col-md-3
+					.col-md-9
+						.clearfix
+							.h2-wrap.clearfix
+								.column
+									h2.medium Интересное в блоге
+								.column.ta-right
+									a(href="#").btn.btn--default
+										span Перейти в блог
+							include includes/interesting
+		.big-padding
+			.container
+				.row
+					.col-md-3
+					.col-md-9
+						include includes/main-form
+
+
+
+
+
+
+

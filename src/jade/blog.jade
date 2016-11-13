@@ -1,0 +1,155 @@
+extends _template
+
+block main
+
+	.breadcumbs
+		.container
+			ul
+				li: a(href="#") Главная 
+				li: a(href="#") Типовая страница 
+	.inner__main
+		.container
+			.row
+				.col-md-3
+					include includes/best-menu
+					include includes/left-menu
+				.col-md-9
+					.main__content.blog__content
+							.inner__header
+								h2 Прочитайте еще
+								.row.clearfix
+									.col-md-6
+										.blog-post
+											.blog-post__body
+												.blog-post__image.ta-center
+													img(src="img/blog-post-image-small.png", alt="")
+												.blog-post__name О работе новичков на биржах уникального контента
+												.blog-post__desc 
+													|Работать на биржах уникального контента с каждым годом все сложнее и сложнее. Число копирайтеров и рерайтеров, стремящихся заработать... 
+													a(href="#") Читать
+											.blog-post__footer
+												.blog-post__author
+													.interesting__author-image
+														img(src="img/interesting-author1.jpg", alt="")
+													.interesting__author-info
+														.name Светлана Павленко
+														.spec Копирайтер
+												.blog-post__watched
+													span.icon.icon-eye
+													span 999
+									.col-md-6
+										.blog-post
+											.blog-post__body(style="background:url('img/post-blog-image-big.jpg')").mask
+												.blog-post__image
+													img(src="img/post-blog-image-xs.png", alt="")
+												.blog-post__name Кем и где можно работать в Интернет?
+												.blog-post__desc 
+													|Сегодня ни для кого не секрет, что Интернет дает большие возможности пользователям. Но не все могут ими воспользоваться из-за изобилия информации...
+													a(href="#") Читать
+											.blog-post__footer
+												.blog-post__author
+													.interesting__author-image.ta-center
+														img(src="img/interesting-author1.jpg", alt="")
+													.interesting__author-info
+														.name Светлана Павленко
+														.spec Копирайтер.
+												.blog-post__watched
+													span.icon.icon-eye
+													span 999
+								.row.clearfix
+									.col-md-12
+										.blog-post.blog-post--horizontal
+											.blog-post__image
+												img(src="img/post-horizontal.jpg", alt="")
+											.blog-post__body
+												.blog-post__name Кем и где можно работать в Интернет?
+												.blog-post__desc 
+													|Сегодня ни для кого не секрет, что Интернет дает большие возможности пользователям. Но не все могут ими воспользоваться из-за изобилия информации...
+													a(href="#") Читать
+												.blog-post__footer
+													.blog-post__author
+														.interesting__author-image.ta-center
+															img(src="img/interesting-author1.jpg", alt="")
+														.interesting__author-info
+															.name Светлана Павленко
+															.spec Копирайтер.
+													.blog-post__watched
+														span.icon.icon-eye
+														span 999
+								.row.clearfix
+									.col-md-6
+										.blog-video
+											.blog-video__top
+												img(src="img/video-post.jpg", alt="")
+											.blog-video__bottom
+												a(href="#")
+													img(src="img/post-video.png", alt="")
+													span Внешняя поисковая оптимизация - основа продвижения сайтов
+									.col-md-6
+										.video-thumbs
+											.video-thumbs__item
+												.centered
+													img(src="img/post-mini1.png", alt="")
+													a(href="#") Инструменты для продвижения сайта
+											.video-thumbs__item
+												.centered
+													img(src="img/post-mini2.png", alt="")
+													a(href="#") Массовое добавление друзей в ЖЖ — быстро и просто
+											.video-thumbs__item
+												.centered
+													img(src="img/post-mini3.png", alt="")
+													a(href="#") Виды SEO-оптимизации сайтов
+											a(href="#") Еще видео
+							.mb-30
+								include includes/subscribe-small
+							.row.clearfix.mixed-info-block.mb-30
+								.col-md-6
+									.news__item-wrap.akcia.mb-30: .news__item
+										.news__akcia Акива акция!
+										.news__header При создании сайта поддержка и продвижение в течении 3х месяцев бесплатно!
+										.news__footer.clearfix
+											.news__date Только до 30.10.2016
+									.blog-post
+										.blog-post__body
+											.blog-post__name О работе новичков на биржах уникального контента
+											.blog-post__desc 
+												|Работать на биржах уникального контента с каждым годом все сложнее и сложнее. Число копирайтеров и рерайтеров, стремящихся заработать... 
+												a(href="#") Читать
+								.col-md-6
+									.blog-post
+										.blog-post__body
+											.blog-post__image.ta-center
+												img(src="img/mixid-block.png", alt="")
+											.blog-post__name О работе новичков на биржах уникального контента
+											.blog-post__desc 
+												|Работать на биржах уникального контента с каждым годом все сложнее и сложнее. Число копирайтеров и рерайтеров, стремящихся заработать... 
+												a(href="#") Читать
+										.blog-post__footer
+											.blog-post__author
+												.interesting__author-image
+													img(src="img/interesting-author1.jpg", alt="")
+												.interesting__author-info
+													.name Светлана Павленко
+													.spec Копирайтер
+											.blog-post__watched
+												span.icon.icon-eye
+												span 999
+							.mb-60.ta-center.more-post
+								a(href="#").btn.btn--bdred Больше историй
+							.text-section.border-red.text-section--question.blocks-justify
+								.column.first
+									span Есть вопросы ?
+								.column
+									.main-header__phone.red 8 800 200 47 80
+									span.phone-desc (Бесплатно по россии)
+								.column 
+									span или
+								.column 
+									a(href="#").btn.btn--red.big Закажите звонок
+
+
+
+
+
+
+

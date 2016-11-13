@@ -1,0 +1,95 @@
+extends _template
+
+block main
+	.breadcumbs
+		.container
+			ul
+				li: a(href="#") Главная 
+				li: a(href="#") Типовая страница 
+	.inner__main
+		.container
+			.row
+				.col-md-3
+					include includes/left-menu
+				.col-md-9
+					.main__content
+						.inner__header
+							h1 Контакты
+							.text-section.border-red.text-section--question.blocks-justify
+								.column.first
+									span Звоните нам<br><b>с 10-00 до 19-00</b>
+								.column
+									.main-header__phone.red 8 800 200 47 80
+									span.phone-desc (Бесплатно по россии)
+								.column 
+									span или
+								.column 
+									a(href="#callbackModal").btn.btn--red.big Закажите звонок
+							.contacts-city.mb-60
+								.contacts-city__nav.clearfix
+									span.left Выберите город
+									.right 
+										span.icon.icon-marker-orange
+										span Москва
+								ul.contacts-city__menu
+									li: a(href="#moscow") Москва
+									li: a(href="#piter") Санкт-питербург
+									li: a(href="#voroneg") Воронеж
+								.contacts-city__main#moscow.active
+									.contacts-city__top.clearfix
+										span.contacts-city__name Москва
+										.contacts-city__phone 
+											span.icon.icon-phone-gray
+											span 8 (499) 404-03-96
+										.contacts-city__addr
+											span.icon.icon-marker-gray
+											span ул. Угрешская д. 2 стр. 51, помещение 5 Ближайшая станция метро: Кожуховская
+									.contacts-city__map
+										<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=mEWRDCXmOb40TLMseWnabU-B6r-mQlYe&amp;width=100%&amp;height=363&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+								.contacts-city__main#piter
+									.contacts-city__top.clearfix
+										span.contacts-city__name Санкт-питербург
+										.contacts-city__phone 
+											span.icon.icon-phone-gray
+											span 8 (499) 404-03-96
+										.contacts-city__addr
+											span.icon.icon-marker-gray
+											span ул. Угрешская д. 2 стр. 51, помещение 5 Ближайшая станция метро: Кожуховская
+									.contacts-city__map
+										<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=mEWRDCXmOb40TLMseWnabU-B6r-mQlYe&amp;width=100%&amp;height=363&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+								.contacts-city__main#voroneg
+									.contacts-city__top.clearfix
+										span.contacts-city__name Воронеж
+										.contacts-city__phone 
+											span.icon.icon-phone-gray
+											span 8 (499) 404-03-96
+										.contacts-city__addr
+											span.icon.icon-marker-gray
+											span ул. Угрешская д. 2 стр. 51, помещение 5 Ближайшая станция метро: Кожуховская
+									.contacts-city__map
+										<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=mEWRDCXmOb40TLMseWnabU-B6r-mQlYe&amp;width=100%&amp;height=363&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+
+							h2 Телефоны в других городах
+							ul.contacts-phones
+								li 	<b>8 (831) 219-98-17</b> Нижний Новгород
+								li 	<b>8 (8442) 45-94-73</b> Волгоград
+								li 	<b>8 (383) 207-83-11</b> Новосибирск
+								li 	<b>8 (473) 200-61-83</b> Воронеж
+								li 	<b>8 (342) 299-43-52</b> Пермь
+								li 	<b>8 (343) 386-17-94</b> Екатеринбург
+								li 	<b>8 (863) 308-17-35</b> Ростов-на-Дону
+								li 	<b>8 (843) 216-97-33</b> Казань
+								li 	<b>8 (846) 215-01-73</b> Самара
+								li 	<b>8 (861) 238-87-54</b> Краснодар
+								li 	<b>8 (812) 409-34-03</b> Санкт-Петербург
+								li 	<b>8 (351) 220-53-59</b> Челябинск
+
+
+
+
+
+
+
+
+
+

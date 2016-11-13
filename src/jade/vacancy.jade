@@ -1,0 +1,66 @@
+extends _template
+
+block main
+	.breadcumbs
+		.container
+			ul
+				li: a(href="#") Главная 
+				li: a(href="#") Типовая страница 
+	.inner__main
+		.container
+			.row
+				.col-md-3
+					include includes/left-menu
+				.col-md-9
+					.main__content
+						.inner__header
+							h1 Юзабилити-специалист
+							img(src="img/vacancy-uxui.png", alt="").img-left
+							p Юзабилити сайта помогает людям работать с определенным интернет-ресурсом эффективно, результативно и получать от этого удовольствие. Проработка юзабилити включает в себя анализ, проведение тестирований, написание рекомендаций, создание прототипов или макетов, контроль за внесением правок и замеры результативности.
+							p Профессиональное оказание данной услуги гарантирует увеличение продаж нашего Клиента, а значит, и его безоговорочное счастье. 
+							hr
+							.mb-60
+								h2 Обязанности и требования
+								.vacancy-requirements.border--dotted-gray.gray-area
+									ul.ul.ul--check
+										li Опрятность, ответственность. 
+										li Знание основных графических редакторов <b>Photoshop \ Illustrator</b>.
+										li Иметь хорошее представление о <b>UI\UX</b>
+										li Владеть навыками <b>прототипирования</b>
+										li <b>Разработка</b> макетов для сайтов
+										li Отрисовка интерфейсов.
+										li Опыт от <b>1</b> года.
+							.mb-60.clearfix
+								h2 Условия работы
+								.row.uslovia
+									.col-sm-4
+										span.icon: img(src="img/uls-r1.png", alt="")
+										span полный рабочий день с 10:00 до 19:00
+									.col-sm-4
+										span.icon: img(src="img/uls-r2.png", alt="")
+										span оклад + премия
+									.col-sm-4
+										span.icon: img(src="img/uls-r3.png", alt="")
+										span возможность карьерного роста
+							.mb-60
+								h2 Интересно ?
+								p Если у Вас есть опыт работы с Adobe Photoshop, дизайном и/или проектированием сайтов, понимание основ веб-технологий, и не угасает желание узнать, почему для этой страницы мы использовали именно этот дизайн...
+								img(src="img/vacancy-bottom-arr.png", alt="").vacancy-bottom-arr
+								
+						.text-section.border-red.text-section--question.vertical
+							.column.first
+								span Отправить свое резюме
+							.column
+								a(href="mailto:rabota@akiwa.ru") rabota@akiwa.ru
+							.column.or
+								span или жми
+							.column 
+								a(href="#").btn.btn--red.big Хочу работать в  Akiwa
+						
+
+
+
+
+
+
+

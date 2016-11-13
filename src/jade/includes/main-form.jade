@@ -1,0 +1,46 @@
+//main-form
+.main-form.clearfix
+	.main-form__header
+		span.icon.icon-main-form
+		span Отправить заявку
+	.main-form__body
+		form(action="#")
+			.row.clearfix
+				.col-50
+					label.form-label
+						span.input-title Имя
+						input.input(type="text" placeholder="Как к вам обращаться?" required)
+					label.form-label
+						span.input-title Адрес сайта
+						input.input(type="text" placeholder="Укажите адрес Вашего сайта" required)
+				.col-50
+					label.form-label
+						span.input-title Телефон
+						input.input(type="text" placeholder="Ваш номер телефона" required)
+					label.form-label
+						span.input-title Email
+						input.input(type="text" placeholder="Ваша электронная почта" required)
+			.row.mb-30
+				.col-100.blocks-justify
+					.main-form__ui-slider-title Бюджет, руб 
+					.main-form__ui-slider
+						#mainFormSlider
+					.main-form__ui-slider-values
+						input.input(type="number" value="0").min
+						span -
+						input.input(type="number" value="1000").max
+			.row.clearfix.mb-30
+				.col-50
+					.form-addfile
+						input(type="file")
+						button.btn
+							span.icon.icon-clip.left
+							span Прикрепить файл
+						span.desc Форматы: DOC, DOCX, XLS, XLSX, TXT, PDF
+				.col-50
+					textarea.textarea(placeholder="Ваше сообщение")
+			.row.main-form__footer
+				.col-100
+					span * - Обязательное заполнение полей отмеченных звездочкой
+					a(href="#").btn.btn--red.fl-right.big Отправить сообщение
+//main-form end

@@ -39,9 +39,9 @@ block main
 					strong Бесплатный анализ сайта
 					span Мы перезвоним в течении 30 минут
 				form(action="#")
-					input.input(type="text" placeholder="Ваше имя")
-					input.input(type="text" placeholder="Адрес вашего сайта")
-					input.input(type="text" placeholder="Телефон")
+					input.input.input--centered(type="text" placeholder="Ваше имя")
+					input.input.input--centered(type="text" placeholder="Адрес вашего сайта")
+					input.input.input--centered(type="text" placeholder="Телефон").phone-mask
 					button.submit(type="submit") Отправить
 	// ========== main-slider end =========
 	// ========== service =========
@@ -128,11 +128,11 @@ block main
 			.service-buttons
 				.col-md-4.col-sm-6.bdr
 					a(href="").btn.btn--thin 
-						i.icon.icon-adobe
+						i.icon.icon-adobe.left
 						span Скачать прайс-лист
 				.col-md-8.col-sm-6
 					a(href="").btn.btn--thin.presentation
-						i.icon.icon-akiwa
+						i.icon.icon-akiwa.left
 						span Скачать презентацию
 						p.desc Узнайте о нас и нашей работе!
 	// ========== service end =========
@@ -157,7 +157,7 @@ block main
 									.desc.line.line--left Основная миссия нашего<br>коллектива — организация сервиса одного окна. 
 									a(href="").btn.btn--red Узнать больше о нас
 					.col-md-6
-						.team__item.clearfix
+						.team__item.team__item--small.clearfix
 							.text
 								.name Дмитрий Горский
 								.spec Топ менеджер
@@ -167,7 +167,7 @@ block main
 									| в 7 городах России
 							.image
 								img(src="img/team2.png", alt="")
-						.team__item.clearfix
+						.team__item.team__item--small.clearfix
 							.image
 								img(src="img/team3.png", alt="")
 							.text
@@ -178,7 +178,7 @@ block main
 							.support-callback
 								form(action="")
 									p Попросить техподдержку связаться с Вами
-									input.input(type="text" placeholder="Ваш телефон")
+									input.input.input--centered(type="text" placeholder="Ваш телефон")
 									input(type="submit" value="Отправить заявку").btn.btn--brg
 					
 			.team-footer.clearfix
@@ -325,10 +325,10 @@ block main
 				.client__item: img(src="img/client8.jpg", alt="")
 				.client__item: img(src="img/client9.jpg", alt="")
 			.clients-controls
-				.min 6
+				
 				.clients-slider__wrap
 					.clients-slider
-				.max 100
+				
 			.ta-center
 				a(href="#").btn.btn--default Все клиенты
 	// ========== clients end =========
@@ -356,15 +356,7 @@ block main
 						p Главное осеннее мероприятие сразу четырех отраслей (Интернет, Медиа, Телеком и Софт) прошло в октябре этого года в Москве, на площадке Экспоцентра ...
 					.news__footer.clearfix
 						.news__date 23.08.2016
-			.subscribe.clearfix
-				.subscribe__left
-					p.title Оформить подписку
-					span.desc Получайте уведомления о новостях и акциях <br> себе на почту
-				.subscribe__right
-					form(action="#")
-						input(type="text" placeholder="Ваше имя").subscribe__input
-						input(type="text" placeholder="Email").subscribe__input
-						input(type="submit" value="Подписаться").subscribe__submit
+			include includes/subscribe
 	// ========== news end =================
 	// ========== prices =================
 	.page__prices
@@ -378,17 +370,17 @@ block main
 								i.icon.icon-purse
 							span Стоимость работ по продвижению
 						.prices__body
-							.price-block.red
+							.price-block.red.border
 								span Продвижение сайта по России
 								span от
 								b 50 000
 								i.icon.icon-rouble
-							.price-block.orange
+							.price-block.orange.border
 								span Продвижение сайта по России
 								span от
 								b 35 000
 								i.icon.icon-rouble
-							.price-block.green
+							.price-block.green.border
 								span Продвижение сайта по России
 								span от 
 								b 30 000

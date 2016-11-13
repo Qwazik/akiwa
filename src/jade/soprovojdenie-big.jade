@@ -1,0 +1,213 @@
+extends _template
+
+block main
+	.breadcumbs
+		.container
+			ul
+				li: a(href="#") Главная 
+				li: a(href="#") Типовая страница 
+	.inner__main.nopadding
+		.container
+			.row
+				.col-md-3
+					.over-block
+						include includes/left-menu
+				.col-md-9
+					.main__content
+						.inner__header
+							h1 Сопровождение сайтов
+						.mb-60
+							p Сопровождение сайта является одной из самых актуальных услуг в реалиях современного интернета.
+							p Мы круглосуточно, семь дней в неделю, поддерживаем работоспособность вашего сайта и обеспечиваем его постоянное функционирование. Техническое сопровождение ресурса выполняется профессионалами в области программирования и администрирования.
+							p Качественное и оперативное информационное сопровождение сайта существенно увеличивает шансы ресурса на успешное продвижение в поисковых системах Яндекс и Google, и повышает интерес посетителей. Всегда актуальный и уникальный контент – это одно из главных составляющих привлечения целевой аудитории.
+							p Ежедневный рост интернет-аудитории и конкуренция в борьбе за лидерство в выдаче поисковых систем диктует новые требования к поддержке сайтов.
+		.features.clearfix
+			.container
+				.row
+					.col-md-3
+					.col-md-9
+						h2.big Почему мы ?
+						.features__list.clearfix
+							.row
+								.col-sm-4.features__column
+									.features__item.mark
+										.features__image
+											img(src="img/prodv-fetures1.png", alt="")
+										span.features__name Стабильность
+										span.features__body 10 лет на рынке интернет-технологий
+								.col-sm-4.features__column
+									.features__item
+										.features__image
+											img(src="img/prodv-fetures2.png", alt="")
+										span.features__name Адекватные цены
+										span.features__body Для каждого сайта индивидуально рассчитываем стоимость вывода того или иного слова, не завышаем бюджет.
+								.col-sm-4.features__column
+									.features__item
+										.features__image
+											img(src="img/prodv-fetures3.png", alt="")
+										span.features__name Индивидуальное обслуживание
+										span.features__body Каждый клиент нашей компании обладает своим персональным менеджером, который расскажет все новости и детали в любое удобное для Вас время.
+		.tarifs__wrap
+			.container
+				.row
+					.col-md-3
+					.col-md-9
+							.tarifs.big-padding
+								h2.medium Услуги и тарифы
+								.tarifs__list
+									.tarifs__item.text-section
+										.text-section__centered
+											.text-section__image
+												img(src="img/sopr-tarifs1.png", alt="")
+											.text-section__text
+												.tarifs__header
+													a(href="#") Техническое сопровождение
+												.tarifs__body
+													ul.ul.ul--circle
+														li Перенос на собственный хостинг;
+														li Контроль работоспособности сайта и хостинга;
+														li Антивирусная поддержка и профилактика;
+														li Оперативная коррекция ошибок, возникающих в работе с сайтом;
+														li Круглосуточная консультация по работе и обслуживанию.
+												.tarifs__footer
+													.price
+														| от
+														span.val 15 000 ₽
+													a(href="#").btn.btn--red Отправить заявку
+									.tarifs__item.text-section.mark
+										.text-section__centered
+											.text-section__image
+												img(src="img/sopr-tarifs2.png", alt="")
+											.text-section__text
+												.tarifs__header
+													a(href="#") Информационное сопровождение
+												.tarifs__body
+													ul.ul.ul--circle
+														li Регулярное обновление материалов (тексты, фото, аудио, видео);
+														li Удаление или создание разделов для удобства пользования сайтом;
+														li Набор необходимых текстов и копирайтинг;
+														li Работа над структурой и usability сайта;
+														li Анализ индексации сайта поисковыми системами.
+												.tarifs__footer
+													.price
+														| от
+														span.val 15 000 ₽
+													a(href="#").btn.btn--red Отправить заявку
+									.krugl-sup-text
+										span круглосуточная<br>поддержка
+										span.big 24
+										span.sep /
+										span.big 7
+		.prodv-works.clearfix.big-padding
+			.container
+				.row
+					.col-md-3
+					.col-md-9
+						h2.medium Результаты работы
+						.prodv-works__card
+							.prodv-works__header
+								.works-header
+									.works-header__left
+										span.works-header__name Автопрокат «FIDESCARS»
+										a(href="#").works-header__site www.arendaavtopraga.ru
+										span.works-header__desc Стоматологическая клиника «Союз» специализируется исключительно на оказании стоматологических услуг взрослому и детскому населению в Брянске, а также зуботехническом производстве.
+									.works-header__right
+										img(src="img/fides-logo.png", alt="")
+							.prodv-works__positions.clearfix
+								.achivements__text.achivements__city
+									span.name Россия, Чехия<br>
+									.label.label--black <span class="thin">Продвижение по</span> <b>72 запросам</b>
+									a(href="#") Посмотреть статистику
+								.achivements___row.position
+									.achivements__ico.va-middle
+										i.icon.icon-yandex
+									.achivements__text.va-middle
+										.position__row.clearfix
+											span.position__word Прокат автомобилей в Праге
+											span.position__pos 1
+										.position__row.clearfix
+											span.position__word Прокат авто в Чехии
+											span.position__pos 1
+										.position__row.clearfix
+											span.position__word Автопрокат Прага
+											span.position__pos 5
+		
+							.sup-works__info
+								.sup__works__top
+									.label.label--orange Информационное сопровождение      
+									.label.label--red Техническое сопровождение
+								.sup-works__body.clearfix
+									.sup-works__left
+										.sup-works__item
+											.icon-wrap
+												span.icon.icon-sup-1
+											span.text Перенос сайта на наш хостинг
+										.sup-works__item
+											.icon-wrap
+												span.icon.icon-sup-2
+											span.text Антивирусная поддержка и профилактика
+										.sup-works__item
+											.icon-wrap
+												span.icon.icon-sup-3
+											span.text Круглосуточная консультация по работе и обслуживанию.
+									
+									.sup-works__right
+										.sup-works__item
+											.icon-wrap
+												span.icon.icon-sup-4
+											span.text Регулярное обновление материалов (тексты, фото, аудио, видео);
+										.sup-works__item
+											.icon-wrap
+												span.icon.icon-sup-5
+											span.text Работа над структурой и usability сайта
+										.sup-works__item
+											.icon-wrap
+												span.icon.icon-sup-6
+											span.text <a href="#">Анализ индексации сайта</a> поисковыми системами.
+									.sup-works__center
+										.sup-works-isdone
+											.sup-works-isdone__slider
+												.sup-works-isdone__item
+													span.icon.icon-sup-newspaper
+													span.num 388
+													span.desc статей написано и опубликовано
+												.sup-works-isdone__item
+													span.icon.icon-sup-newspaper
+													span.num 188
+													span.desc статей написано и опубликовано
+												.sup-works-isdone__item
+													span.icon.icon-sup-newspaper
+													span.num 288
+													span.desc статей написано и опубликовано
+											.sup-works-isdone__dots
+						.sup-works__footer
+							.projects-col
+								span 162
+								span сайтов в сопровождении
+							a(href="#").btn.btn--red Статистика других клиентов
+		.interesting__wrap.dark.big-padding
+			.container
+				.row
+					.col-md-3
+					.col-md-9
+						.clearfix
+							.h2-wrap.clearfix
+								.column
+									h2.medium Интересное в блоге
+								.column.ta-right
+									a(href="#").btn.btn--default
+										span Перейти в блог
+							include includes/interesting
+		.big-padding
+			.container
+				.row
+					.col-md-3
+					.col-md-9
+						include includes/main-form
+
+
+
+
+
+
+

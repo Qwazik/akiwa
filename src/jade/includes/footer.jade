@@ -5,7 +5,7 @@
 				.logo
 					img(src="img/logo-light.svg", alt="")
 					span -
-					a(href="#")	 Есть вакансии 
+					a(href="#") Есть вакансии
 				p © 2008-2016 ООО «Акива» Все права защищены. <br> Akiwa.ru - продвижение и оптимизация сайтов.
 				p Любое использование материалов с сайта возможно <br> только при наличии ссылки на первоисточник.
 				br
@@ -46,8 +46,27 @@
 				li <span>8 (861) 238-87-54</span> Краснодар
 				li <span>8 (812) 409-34-03</span> Санкт-Петербург
 				li <span>8 (351) 220-53-59</span> Челябинск  
+// === popups ====
+.fixed-button
+	a(href="#callbackZayavka" class="fancybox-modal").btn.btn--red Оформить заявку
+#callbackModal.callback-modal
+	.callback-form
+		.callback-form__header
+			strong Заказать звонок
+			span Мы перезвоним в течении 30 минут
+		form(action="#")
+			input.input.input--centered(type="text" placeholder="Ваше имя")
+			input.input.input--centered(type="text" placeholder="Телефон").phone-mask
 
+#callbackZayavka.callback-form.hidden
+	i.icon.icon-freeanaliz
+	.callback-form__header
+		strong Бесплатный анализ сайта
+		span Мы перезвоним в течении 30 минут
+	form(action="#")
+		input.input.input--centered(type="text" placeholder="Ваше имя")
+		input.input.input--centered(type="text" placeholder="Адрес вашего сайта")
+		input.input.input--centered(type="text" placeholder="Телефон").phone-mask
+		button.submit(type="submit") Отправить
 
-
-
-			
+// === popups end ====

@@ -1,0 +1,121 @@
+extends _template
+
+block main
+
+	.breadcumbs
+		.container
+			ul
+				li: a(href="#") Главная 
+				li: a(href="#") Типовая страница 
+	.inner__main
+		.container
+			.row
+				.col-md-3
+					include includes/left-menu
+					.cooperation
+						big Начать сотрудничество с компанией Акива
+						p Давайте строить бизнес вместе! Помогите нам стать лучше, напишем новую историю вместе!
+						a(href="#").btn.btn--red Отправить заявку
+				.col-md-9
+					.main__content
+						.inner__header
+							h1 Истории успеха
+						.history-section.clearfix
+							.row.mb-30.clearfix
+								.col-lg-8.col-sm-7
+									a(href="#").history-section__item
+										.history-section__image
+											img(src="img/history-1.jpg", alt="")
+										.history-section__body
+											span.history-section__name Strateg overseas
+											span.history-section__desc Защита интеллектуальной собственности 
+											p.history-section__text Strateg Overseas предлагает весь спектр услуг в области сертификации продукции.
+
+								.col-lg-4.col-sm-5
+									a(href="#").history-section__item.history-section__item--vertical
+										.history-section__image
+											img(src="img/history-2.jpg", alt="")
+										.history-section__body
+											.history-section__name ЭкоМосГрупп
+											.history-section__desc Вывоз мусора и отходов
+									a(href="#").history-post
+										.history-post__container
+											.history-post__image
+												img(src="img/history-logo2.jpg", alt="")
+											.history-post__text
+												.history-post__name Как мы Pull &amp; Bearпродвигали
+												.history-post__desc Испанский магазин одежды и аксессуаров
+							.row.mb-30.clearfix
+								.col-sm-12
+									a(href="#").history-section__item.history-section__item--big
+										.history-section__image
+											img(src="img/history-3.jpg", alt="")
+										.history-section__body
+											span.history-section__name Альянс Энерго Пром
+											span.history-section__desc Нефегазовый сектор
+											p.history-section__text Динамично развивающаяся компания имеющая репутацию профессионального и надежного партнера на рынке продуктов и услуг для нефтегазовой отрасли.
+							.row.mb-30.clearfix
+								.col-xs-4.history-section__wrap--small
+									a(href="#").history-section__item.history-section__item--small
+										.history-section__image
+											img(src="img/history-4.jpg", alt="")
+										.history-section__body
+											span.history-section__name NucMed
+											span.history-section__desc Медицинская корпорация
+								.col-xs-4.history-section__wrap--small
+									a(href="#").history-section__item.history-section__item--small
+										.history-section__image
+											img(src="img/history-5.jpg", alt="")
+										.history-section__body
+											span.history-section__name Red Taxi
+											span.history-section__desc Служба такси
+								.col-xs-4.history-section__wrap--small
+									a(href="#").history-section__item.history-section__item--small
+										.history-section__image
+											img(src="img/history-6.jpg", alt="")
+										.history-section__body
+											span.history-section__name British Center
+											span.history-section__desc Школа английского языка
+							.row.mb-30.clearfix
+								.col-lg-4.col-sm-5
+									a(href="#").history-section__item.history-section__item--vertical
+										.history-section__image
+											img(src="img/history-7.jpg", alt="")
+										.history-section__body.history-section__body--vertical
+											span.history-section__name Bennet Bernstein &amp; partners
+											span.history-section__desc Юридические услуги
+									a(href="#").history-post
+										.history-post__container
+											.history-post__image
+												img(src="img/history-logo4.jpg", alt="")
+											.history-post__text
+												.history-post__name Креативная история от Genuine Oil
+												.history-post__desc Автоматизация производственных процессов и систем
+								.col-lg-8.col-sm-7
+									a(href="#").history-section__item
+										.history-section__image
+											img(src="img/history-8.jpg", alt="")
+										.history-section__body
+											span.history-section__name Rostehno
+											span.history-section__desc Технологическое оборудование
+											p.history-section__text Оборудование для Вашего предприятия или организации!
+							.history-more
+								a(href="#").btn.btn--default Больше историй
+
+						.text-section.border-red.text-section--question.blocks-justify
+							.column.first
+								span Есть вопросы ?
+							.column
+								.main-header__phone.red 8 800 200 47 80
+								span.phone-desc (Бесплатно по россии)
+							.column 
+								span или
+							.column 
+								a(href="#").btn.btn--red.big Закажите звонок
+
+
+
+
+
+
+

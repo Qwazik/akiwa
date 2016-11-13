@@ -1,0 +1,140 @@
+extends _template
+
+block main
+	.breadcumbs
+		.container
+			ul
+				li: a(href="#") Главная 
+				li: a(href="#") Типовая страница 
+	.inner__main
+		.container
+			.row
+				.col-md-3
+					include includes/left-menu
+				.col-md-9
+					.main__content
+						.inner__header
+							h1 Работа в Акива
+						.mb-60
+							p <b>Компания «Акива»</b> — занимает уверенные позиции на рынке интернет технологий. Нам постоянно требуются новые специалисты. Мы предлагаем интересную работу и достойную оплату труда. Оформление строго по ТК РФ, работа предлагается только в офисе.
+							h2 Что мы предлагаем
+							.job-offer.clearfix
+								.row
+									.col-lg-4.col-sm-6.job-offer__column
+										.job-offer__item
+											.job-offer__image
+												img(src="img/job-offer-1.png", alt="Карьерный рост")
+											span.job-offer__name Карьерный рост
+											span.job-offer__desc Средний срок перехода на следующую  карьерную ступень – 1 год
+									.col-lg-4.col-sm-6.job-offer__column
+										.job-offer__item
+											.job-offer__image
+												img(src="img/job-offer-2.png", alt="Финансовый рост")
+											span.job-offer__name Финансовый рост
+											span.job-offer__desc Зарплата успешных  сотрудников Компании выше среднерыночных показателей
+									.col-lg-4.col-sm-6.job-offer__column
+										.job-offer__item
+											.job-offer__image
+												img(src="img/job-offer-3.png", alt="Карьерный рост")
+											span.job-offer__name Стабильность
+											span.job-offer__desc 12 лет на рынке интернет-технологий
+									.col-lg-4.col-sm-6.job-offer__column
+										.job-offer__item
+											.job-offer__image
+												img(src="img/job-offer-4.png", alt="Карьерный рост")
+											span.job-offer__name Обучение и развитие
+											span.job-offer__desc Регулярно проводим тренинги, семинары и мастер-классы
+									.col-lg-4.col-sm-6.job-offer__column
+										.job-offer__item
+											.job-offer__image
+												img(src="img/job-offer-5.png", alt="Карьерный рост")
+											span.job-offer__name Бонусы и премии 
+											span.job-offer__desc Щедро благодарим старательных и ответственных сотрудников
+									.col-lg-4.col-sm-6.job-offer__column
+										.job-offer__item
+											.job-offer__image
+												img(src="img/job-offer-6.png", alt="Карьерный рост")
+											span.job-offer__name Работа в офисе
+											span.job-offer__desc Комфорные офисы в 14 городах России
+						.mb-60
+							h2 Вакансии по городам
+							.inner-vacancy
+								ul.inner-vacancy__city-nav.mb-30
+									li.label.label--white.inner-vacancy__city-choise.active
+										span.icon
+										span.name Брянск
+									li.label.label--white.inner-vacancy__city-choise
+										span.icon
+										span.name Краснодар
+									li.label.label--white.inner-vacancy__city-choise
+										span.icon
+										span.name Москва
+									li.label.label--white.inner-vacancy__city-choise
+										span.icon
+										span.name Санкт-Петербург
+									li.label.label--white.inner-vacancy__city-choise
+										span.icon
+										span.name Челябинск
+								.inner-vacancy__list
+									.inner-vacancy__item
+										.inner-vacancy__header
+											.title Менеджер по продажам
+											.inner-vacancy__city
+												span Брянск
+												span Краснодар
+										.inner-vacancy__body
+											p <b>Требования:</b> грамотная речь, коммуникабельность, ответственность, пунктуальность, стрессоустойчивость. Знание ПК (офисный пакет программ). Опыт от 1 года.
+											p <b>Обязанности:</b> поиск новых клиентов, работа с горячей и холодной базой. Составление кп. Работа в команде.
+											p <b>Условия:</b> полный рабочий день с 10:00 до 19:00. Оклад + % от продажи +  %  за выполнение плана + бонус. Возможность карьерного роста.
+											a(href="#") Подробнее
+									.inner-vacancy__item
+										.inner-vacancy__header
+											.title Веб-программист
+											.inner-vacancy__city
+												span Брянск
+												span Краснодар
+												span Москва
+										.inner-vacancy__body
+											p <b>Требования:</b> ответственность, пунктуальность, стрессоустойчивость, опрятность! Опыт верстки и программирования под cms wordpress, 1С-Битрикс, joomla. Желателен опыт синхронизации сайтов с 1С. Опыт от 1 года.
+											p <b>Обязанности:</b> верстка и программирование сайтов различной сложности, умение самостоятельно решать поставленные задачи.
+											p <b>Условия:</b> полный рабочий день с 10:00 до 19:00. Оклад + премия.
+											a(href="#") Подробнее
+									.inner-vacancy__item.urgently
+										.urgently-text Cрочно
+										.inner-vacancy__header
+											.title Веб-дизайнер
+											.inner-vacancy__city
+												span Брянск
+										.inner-vacancy__body
+											p <b>Требования:</b>  опрятность, ответственность. Знание основных графических редакторов. Опыт от 1 года.
+											p <b>Обязанности:</b> разработка макетов для сайтов, отрисовка интерфейсов.
+											p <b>Условия:</b> полный рабочий день с 10:00 до 19:00. Оклад + премия.
+											a(href="#") Подробнее
+									.inner-vacancy__item
+										.inner-vacancy__header
+											.title Менеджер по продажам
+											.inner-vacancy__city
+												span Краснодар
+										.inner-vacancy__body
+											p Требования: грамотная речь, коммуникабельность, ответственность, пунктуальность, стрессоустойчивость. Знание ПК (офисный пакет программ). Опыт от 1 года.
+											p Обязанности: поиск новых клиентов, работа с горячей и холодной базой. Составление кп. Работа в команде.
+											p Условия: полный рабочий день с 10:00 до 19:00. Оклад + % от продажи +  %  за выполнение плана + бонус. Возможность карьерного роста.
+											a(href="#") Подробнее
+						.text-section.border-red.text-section--question.blocks-justify
+							.column.first
+								span Не нашли интересующую<br> Вас вакансию?
+							.column
+								a(href="#") Заполнить резюме
+							.column.relative
+								.addresume
+								span или
+							.column 
+								a(href="#").btn.btn--red.big Прикрепить резюме
+						
+
+
+
+
+
+
+

@@ -34,12 +34,12 @@ var path = {
 	src: {
 		jade: ['src/jade/*.jade', '!src/jade/_template.jade'],
 		js: {
-			common: 'src/js/main.js',
+			common: 'src/js/**/*',
 			libs: 'src/libs/**/*'
 		},
 		css: 'src/scss/style.scss',
 		fonts: 'src/fonts/**/*',
-		img: 'src/img/**/*.{jpg,png,svg}'
+		img: 'src/img/**/*'
 	},
 	watch: {
 		jade: 'src/jade/**/*.jade',
@@ -106,16 +106,16 @@ gulp.task('build:css', function(){
 
 gulp.task('build:img', function(){
 	gulp.src(path.src.img)
+        .pipe(gulp.dest(path.build.img))
+})
+gulp.task('imagemin', function(){	
+	gulp.src('build/img/*')
 		.pipe(imagemin({
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],
             use: [pngquant()]
         }))
-        .on("error", notify.onError({
-            message: "Ошибка: <%= error.message %>",
-            title: "Ошибка запуска"}))
-        .pipe(gulp.dest(path.build.img))
-		.pipe(reload({stream: true}));
+     	.pipe(gulp.dest('build/img/*'))
 })
 
 gulp.task('build:fonts', function(){
@@ -125,7 +125,7 @@ gulp.task('build:fonts', function(){
 })
 
 gulp.task('clean', function(callback){
-	return gulp.src(['./build'], {read:false})
+	return gulp.src(['./build/img/', './build/libs/'], {read:false})
 		.pipe(rimraf({force:true}))
 })
 
@@ -139,10 +139,6 @@ gulp.task('build', [
 ])
 
 gulp.task('watch', function(){
-	watch([path.watch.img], function(ev, callback){
-		gulp.start('clean');
-		gulp.start('build:img');
-	});
 	watch([path.watch.jade], function(ev, callback){
 		gulp.start('build:html');
 	});
@@ -158,7 +154,10 @@ gulp.task('watch', function(){
 	watch([path.watch.fonts], function(ev, callback){
 		gulp.start('build:fonts');
 	});
-
+	watch([path.watch.img], function(ev, callback){
+		gulp.start('clean');
+		gulp.start('build:img');
+	});
 })
 
 gulp.task('sprite', function () {

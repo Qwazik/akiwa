@@ -50,6 +50,11 @@ ul {
     list-style-type: none;
 }
 
+ol{
+    padding: 0;
+    list-style-position: inside;
+}
+
 ul,h1,h2,h3,p{
     margin: 0;
 }

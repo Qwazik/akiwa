@@ -1,0 +1,100 @@
+extends tpdoc
+
+block main
+	.container
+		h2 Кнопки
+		div 
+			p Для стилизации используется основной класс btn и дополнительные
+			br
+			h3 btn--default
+			pre
+				&lt;a class="btn btn--default"&gt;Кнопка&lt;/a&gt;
+			a(href="#").btn.btn--default Кнопка
+			br
+			h3 btn--red
+			pre
+				&lt;a href="#" class="btn btn--red"&gt;Кнопка&lt;/a&gt;
+			a(href="#").btn.btn--red Кнопка
+			br
+			h4 Кнопке с классом btn--red  можно добавить класс big для получения большой кнопки
+			pre
+				&lt;a href="#" class="btn btn--red big"&gt;Кнопка&lt;/a&gt;
+			a(href="#").btn.btn--red.big Кнопка
+			br
+			h3 btn--thin
+			pre
+				&lt;a href="#" class="btn btn--thin"&gt;Кнопка&lt;/a&gt;
+			a(href="#").btn.btn--thin Кнопка
+			br
+			h3 btn--brg
+			pre
+				&lt;a href="#" class="btn btn--brg"&gt;Кнопка&lt;/a&gt;
+			a(href="#").btn.btn--brg Кнопка
+		hr
+		h2 Списки
+		div 
+			p Для стилизации используется основной класс ul(ненумерованные) ol(нумерованные) и дополнительные
+			br
+			h3 просто ненумерованный список
+			xmp.
+				<ul class="ul">
+					<li>Lorem.</li>
+					<li>Velit.</li>
+					<li>Cum.</li>
+				</ul>
+			ul.ul
+				li Lorem.
+				li Velit.
+				li Cum.
+			br
+			h3 ul--circle
+			xmp.
+				<ul class="ul ul--circle">
+					<li>Lorem.</li>
+					<li>Velit.</li>
+					<li>Cum.</li>
+				</ul>
+			ul.ul.ul--circle
+				li Lorem.
+				li Velit.
+				li Cum.
+			br
+			h3 ul--check
+			xmp.
+				<ul class="ul ul--check">
+					<li>Lorem.</li>
+					<li>Velit.</li>
+					<li>Cum.</li>
+				</ul>
+			ul.ul.ul--check
+				li Lorem.
+				li Velit.
+				li Cum.
+			br
+			h3 просто нумерованный список
+			xmp.
+				<ol class="ol">
+					<li>Lorem.</li>
+					<li>Velit.</li>
+					<li>Cum.</li>
+				</ol>
+			ol.ol
+				li Lorem.
+				li Velit.
+				li Cum.
+			hr
+			h2 Текстовые секции
+			h3 Основная структура
+			xmp.
+				<div class="text-section">
+					<div class="text-section__centered">
+						<div class="text-section__text">В нашей компании работают только 
+						высококвалифицированные сотрудники, которые регулярно 
+						посещают основные профильные мероприятия, проходят
+						 ежегодную сертификацию.</div>
+					</div>
+				</div>
+			div(class="text-section")
+				<div class="text-section__centered">
+					<div class="text-section__text">В нашей компании работают только высококвалифицированные сотрудники, которые регулярно посещают основные профильные мероприятия, проходят ежегодную сертификацию.</div>
+				</div>
