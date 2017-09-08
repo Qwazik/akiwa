@@ -424,3 +424,43 @@ $(document).ready(function(){
     }());
 });
 //new js
+
+//new js2
+$(document).ready(function(){
+    (function(){
+
+        $('.ba-in-akiwa a').click(function(){
+            var city = $(this).attr('href');
+            $(this).siblings('a').removeClass('active');
+            $(this).addClass('active');
+            $('.ba-in-akiwa__slider').removeClass('active');
+            $('.ba-in-akiwa__slider[data-city="'+city+'"]').addClass('active');
+            $('.in-akiwa-slider').trigger('destroy.owl.carousel').removeClass('owl-carousel owl-loaded');
+            $('.in-akiwa-slider').find('.owl-stage-outer').children().unwrap();
+            $('.in-akiwa-slider').owlCarousel({
+                items: 1,
+                dots: true,
+                nav: true,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 5000
+            });
+            return false;
+        });
+
+        $('.in-akiwa-slider').owlCarousel({
+            items: 1,
+            dots: true,
+            nav: true,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 5000
+        });
+
+        $('.ba-serts .fancybox').fancybox({
+            padding: 0
+        });
+    }());
+});
+
+//new js2
