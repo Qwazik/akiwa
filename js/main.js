@@ -359,6 +359,7 @@ function stickMenu(start, end, scroll){
     var menu = $('.over-block .left-menu');
     var containerPadding = parseInt($('.big-padding').css('padding-bottom'));
     // console.log(start, scroll);
+    console.log(start < scroll && scroll < (end - containerPadding))
     if(start < scroll && scroll < (end - containerPadding)){
         $(menu).css('top', ($(window).scrollTop() - start) + 30);
     }else if(start < scroll && scroll > (end - containerPadding)){
