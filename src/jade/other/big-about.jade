@@ -1,0 +1,326 @@
+extends _template
+
+block main
+	.breadcumbs
+		.container
+			ul
+				li: a(href="#") Главная 
+				li: a(href="#") Типовая страница 
+	.inner__main.nopadding.ba-inner
+		.container
+			.row
+				.col-md-3
+					.over-block
+						include includes/left-menu
+				.col-md-9
+					.main__content
+						.inner__header
+							h1 О компании
+						.mb-60
+							p <b>Компания "Акива"</b> эффективно работает, постоянно развивается и растёт в таких сферах, как поисковое продвижение, контекстная реклама, веб-аналитика, разработка интернет-магазинов и копоративных сайтов. Компания представлена своими офисами в нескольких регионах Российской Федерации.
+							p Штат компании составляет более чем 50 высококвалифицированных специалистов, которые регулярно посещают основные профильные мероприятия, проходят ежегодную сертификацию.
+						.ba-top-logos
+							.dt
+								.dtc: img(src="img/big-about/ba-top-logo1.png", alt="")
+								.dtc <b>Компания «Акива»</b> - член ассоциации РАЭК (Российской Ассоциации Электронных Коммуникаций). На сегодняшний день в составе Ассоциации объединены более 150 игроков рынка электронных коммуникаций, что позволяет РАЭК эффективно и качественно представлять интересы отрасли и плодотворно решать ее задачи.
+							.dt
+								.dtc: img(src="img/big-about/ba-top-logo2.png", alt="")
+								.dtc <b>Компания «Акива»</b> - золотой сертифицированный партнёр «1С-Битрикс», что является наилучшим подтверждением нашего опыта и надежности для потенциальных клиентов. Золотой сертифицированный партнер обладает богатым опытом разработки веб-проектов, в том числе сложных программных решений на основе «1С-Битрикс: Управление сайтом». Сотрудники компании «Акива» успешно прошли все имеющиеся учебные курсы, сдали тесты и получили сертификаты специалистов.
+							.dt
+								.dtc: img(src="img/big-about/ba-top-logo3.png", alt="")
+								.dtc <b>Компания «Акива» - член агентского клуба RUWARD</b>, освещающего все ключевые рейтинги, аналитику и инфраструктурные спецпроекты агентского рынка digital-коммуникаций России.
+								
+
+		.ba-in-akiwa.bg-grey.pad-md
+			.container
+				.row
+					.col-md-3
+					.col-md-9
+						.h2-wrap.clearfix
+							.column
+								h2.small: b В гостях у «Акива»
+							.column.ta-right
+								.ba-in-akiwa__toggle
+									span Офис:
+									a(href="moskow").active Москва
+									a(href="bryansk") Брянск
+						.ba-in-akiwa__slider(data-city="moskow").active
+							.in-akiwa-slider__wrap
+								ul.in-akiwa-slider
+									li: img(src="img/big-about/ba-office-photo.jpg", alt="")
+									li: img(src="img/big-about/ba-office-photo.jpg", alt="")
+									li: img(src="img/big-about/ba-office-photo.jpg", alt="")
+									li: img(src="img/big-about/ba-office-photo.jpg", alt="")
+									li: img(src="img/big-about/ba-office-photo.jpg", alt="")
+							.in-akiwa-slider__desc
+								.column
+									.dt
+										.dtc: i.icm.icon-ba-group
+										.dtc: span.num 50
+										.dtc.desc штатных <br> сотрудников
+								.column
+									.dt
+										.dtc: i.icm.icon-ba-webdev
+										.dtc: span.num 150
+										.dtc.desc задач решаем <br> ежедневно для <br> наших клиентов
+						.ba-in-akiwa__slider(data-city="bryansk")
+							.in-akiwa-slider__wrap
+								ul.in-akiwa-slider
+									li: img(src="img/big-about/ba-office-photo.jpg", alt="")
+									li: img(src="img/big-about/ba-office-photo.jpg", alt="")
+									li: img(src="img/big-about/ba-office-photo.jpg", alt="")
+									li: img(src="img/big-about/ba-office-photo.jpg", alt="")
+									li: img(src="img/big-about/ba-office-photo.jpg", alt="")
+							.in-akiwa-slider__desc
+								.column
+									.dt
+										.dtc: i.icm.icon-ba-group
+										.dtc: span.num 50
+										.dtc.desc штатных <br> сотрудников
+								.column
+									.dt
+										.dtc: i.icm.icon-ba-webdev
+										.dtc: span.num 150
+										.dtc.desc задач решаем <br> ежедневно для <br> наших клиентов
+		.pad-md.ba-wwd
+			.container
+				.row
+					.col-md-3
+					.col-md-9
+						h2.small: b Что мы делаем?
+						.ba-wwd-table: .clearfix
+							.row
+								.col-lg-3.col-sm-4.col-xs-6
+									.dt.dt--icon-box
+										.dtc: .icon: i.icm.icon-ba-what1
+										.dtc Электронная коммерция
+								.col-lg-3.col-sm-4.col-xs-6
+									.dt.dt--icon-box
+										.dtc: .icon: i.icm.icon-ba-what2
+										.dtc Недвижимость и строительство
+								.col-lg-3.col-sm-4.col-xs-6
+									.dt.dt--icon-box
+										.dtc: .icon: i.icm.icon-ba-what3
+										.dtc Финансы
+								.col-lg-3.col-sm-4.col-xs-6
+									.dt.dt--icon-box
+										.dtc: .icon: i.icm.icon-ba-what4
+										.dtc Медицина и фармацевтика
+							.row
+								.col-lg-3.col-sm-4.col-xs-6
+									.dt.dt--icon-box
+										.dtc: .icon: i.icm.icon-ba-what5
+										.dtc Авто и мото-бизнес
+								.col-lg-3.col-sm-4.col-xs-6
+									.dt.dt--icon-box
+										.dtc: .icon: i.icm.icon-ba-what6
+										.dtc Текстиль и одежда
+								.col-lg-3.col-sm-4.col-xs-6
+									.dt.dt--icon-box
+										.dtc: .icon: i.icm.icon-ba-what7
+										.dtc Мебель и товары для дома
+								.col-lg-3.col-sm-4.col-xs-6
+									.dt.dt--icon-box
+										.dtc: .icon: img(src="img/big-about/ba-what8.png", alt="")
+										.dtc Промышленность и производства
+							.row
+								.col-lg-3.col-sm-4.col-xs-6
+									.dt.dt--icon-box
+										.dtc: .icon: i.icm.icon-ba-what9
+										.dtc Розничная торговля
+								.col-lg-3.col-sm-4.col-xs-6
+									.dt.dt--icon-box
+										.dtc: .icon: i.icm.icon-ba-what10
+										.dtc Промышленное оборудование
+								.col-lg-3.col-sm-4.col-xs-6
+									.dt.dt--icon-box
+										.dtc: .icon: i.icm.icon-ba-what11
+										.dtc Красота и косметология
+								.col-lg-3.col-sm-4.col-xs-6
+									.dt.dt--icon-box
+										.dtc: .icon: i.icm.icon-ba-what12
+										.dtc FMCG-товары
+							.row
+								.col-lg-3.col-sm-4.col-xs-6
+									.dt.dt--icon-box
+										.dtc: .icon: i.icm.icon-ba-what13
+										.dtc Туризм
+								.col-lg-3.col-sm-4.col-xs-6
+									.dt.dt--icon-box
+										.dtc: .icon: i.icm.icon-ba-what14
+										.dtc Спорт и фитнес
+								.col-lg-3.col-sm-4.col-xs-6
+									.dt.dt--icon-box
+										.dtc: .icon: i.icm.icon-ba-what15
+										.dtc Государство
+								.col-lg-3.col-sm-4.col-xs-6
+									.dt.dt--icon-box
+										.dtc: .icon: i.icm.icon-ba-what16
+										.dtc Телекоммуникации и связь
+							.row
+								.col-lg-3.col-sm-4.col-xs-6
+									.dt.dt--icon-box
+										.dtc: .icon: i.icm.icon-ba-what17
+										.dtc Образование и наука
+								.col-lg-3.col-sm-4.col-xs-6
+									.dt.dt--icon-box
+										.dtc: .icon: i.icm.icon-ba-what18
+										.dtc Товары для детей
+								.col-lg-3.col-sm-4.col-xs-6
+									.dt.dt--icon-box
+										.dtc: .icon: i.icm.icon-ba-what19
+										.dtc Гостиницы
+								.col-lg-3.col-sm-4.col-xs-6
+									.dt.dt--icon-box
+										.dtc: .icon: i.icm.icon-ba-what20
+										.dtc Кафе и рестораны
+						.ba-wwd-red
+							.dt
+								.dtc: i.icm.icon-ba-comp
+								.dtc Одним из ведущих направлений компании является организация сервиса одного окна. Мы готовы взять на себя все функции вашего технического отдела.
+						.ba-wwd-content
+							p Максимальная автоматизация внутренних бизнес-процессов (выставление счетов, рассылка корреспонденции и т.д.), позволяет нам сохранить <b>индивидуальный подход к проекту и живое общение с клиентом.</b>
+							p Мы имеем успешный опыт сотрудничества с клиентами из различных отраслей экономики. Мы уверены, что построить успешный бизнес, основанный на фундаментальных принципах, можно только в случае оказания исключительно полезных услуг.
+							p <b>Наша компания целенаправленно решает любые задачи по продвижению бизнеса в интернете, выстраивает успешные коммуникации с вашими потребителями и партнерами с помощью современных digital-инструментов.</b>
+						.outside-block.outside-block--right
+							.white Все проекты  <br>«Акива» всегда на  <br>строгом контроле <br> у генерального <br> директора!
+							img(src="img/big-about/gendir.png", alt="").img
+							.block-name
+								span.name Дмитрий <br> Горбачев
+								span.spec Генеральный директор
+							a(href="#").btn.btn--red Записаться на встречу
+						.ba-wwd-content
+							.row
+								.col-md-6
+									.text-section.text-section--dashed-red
+										h3 Основные задачи
+										ol.ol
+											li Возможность заказа у нас любых услуг в области интернет-маркетинга
+											li Ежедневное развитие Вашего ресурса
+											li Нацеленность на повышение Ваших продаж
+											li Продвижение сайтов с привязкой к конечному результату
+											li Дружеский подход к каждому клиенту
+								.col-md-6
+									.text-section.text-section--dashed-red
+										h3 Наши цели
+										ul.ul
+											li Сделать ваш сайт (интернет-ресурс) продающим
+											li Создать и улучшить Ваш продающий потенциал (продукты, услуги)
+											li Обеспечить доступ к уникальным технологиям, а также знаниям и опыту по построению успешного бизнеса в интернете
+											li Показывать Вам прозрачные, измеримые и регулярные результаты работы по развитию Вашего бизнеса в интернете
+		.bg-grey.pad-md.ba-serts
+			.container
+				.row
+					.col-md-3
+					.col-md-9
+						h2.small: b <span>Акива –</span> команда профессионалов!
+						p Мы собрали сертификаты, награды и дипломы наших сотрудников для Вас!
+						.row
+							.col-sm-4.col-xs-6
+								a(href="img/big-about/ba-sert1.jpg").fancybox: img(src="img/big-about/ba-sert1.jpg", alt="").img-responsive
+								a(href="img/big-about/ba-sert4.jpg").fancybox: img(src="img/big-about/ba-sert4.jpg", alt="").img-responsive
+							.col-sm-4.col-xs-6
+								a(href="img/big-about/ba-sert2.jpg").fancybox: img(src="img/big-about/ba-sert2.jpg", alt="").img-responsive
+								a(href="img/big-about/ba-sert5.jpg").fancybox: img(src="img/big-about/ba-sert5.jpg", alt="").img-responsive
+							.col-sm-4.col-xs-6
+								a(href="img/big-about/ba-sert3.jpg").fancybox: img(src="img/big-about/ba-sert3.jpg", alt="").img-responsive
+								a(href="img/big-about/ba-sert6.jpg").fancybox: img(src="img/big-about/ba-sert6.jpg", alt="").img-responsive
+							.ba-serts__footer.ta-center
+								a(href="#").btn.btn--red-sh Показать еще
+							.text-section.text-section--dashed
+								.dt.vam
+									.dtc Мы – постоянный <br> участник всех знаковых <br> мероприятий отрасли
+									.dtc: img(src="img/big-about/ba-event1.png", alt="")
+									.dtc: img(src="img/big-about/ba-event2.png", alt="")
+									.dtc: img(src="img/big-about/ba-event3.png", alt="")
+									.dtc: img(src="img/big-about/ba-event4.png", alt="")
+
+		.pad-md
+			.container
+				.row
+					.col-md-3
+					.col-md-9
+						.clearfix
+							.h2-wrap.clearfix
+								.column
+									h2.small: b С нами работают
+								.column.ta-right
+									a(href="#").btn.btn--default Стать клиентом
+							.dt.ba-parthners.vam
+								.dtc: img(src="img/big-about/ba-parthner1.png", alt="")
+								.dtc: img(src="img/big-about/ba-parthner2.png", alt="")
+								.dtc: img(src="img/big-about/ba-parthner3.png", alt="")
+							.text-section.text-section--red.reviews-section.clearfix
+								.reviews-section__image: img(src="img/reviews-block-img.png", alt="")
+								.reviews-section__text
+									span.reviews-section__header Отзывы о нас
+									span.reviews-section__desc У нас сотни благодарных клиентов со всей России
+								a(href="#").btn.btn--brg.fl-right Все благодарности
+		.ba-more-articles.pad-md
+			.container
+				.row
+					.col-md-3
+					.col-md-9
+						.clearfix
+							.h2-wrap.clearfix
+								.column
+									h2.small: b У нас есть блог
+								.column.ta-right
+									a(href="#").btn.btn--default Читать блог
+							.row
+								.col-md-6
+									.blog-post
+										.blog-post__body
+											.blog-post__image.ta-center
+												img(src='img/blog-post-image-small.png', alt='')
+											.blog-post__name О работе новичков на биржах уникального контента
+											.blog-post__desc
+												| Работать на биржах уникального контента с каждым годом все сложнее и сложнее. Число копирайтеров и рерайтеров...
+												a(href='#') Читать
+										.blog-post__footer
+											.blog-post__author
+												.interesting__author-image
+													img(src='img/interesting-author1.jpg', alt='')
+												.interesting__author-info
+													.name Светлана Павленко
+													.spec Копирайтер
+											.blog-post__watched
+												span.icon.icon-eye
+												span 999
+								.col-md-6
+									.blog-post
+										.blog-post__body.mask(style="background:url('img/post-blog-image-big.jpg')")
+											.blog-post__image
+												img(src='img/post-blog-image-xs.png', alt='')
+											.blog-post__name Кем и где можно работать в Интернет?
+											.blog-post__desc
+												| Сегодня ни для кого не секрет, что Интернет дает большие возможности пользователям. Но не все могут ими воспользоваться из-за изобилия информации...
+												a(href='#') Читать
+										.blog-post__footer
+											.blog-post__author
+												.interesting__author-image.ta-center
+													img(src='img/interesting-author1.jpg', alt='')
+												.interesting__author-info
+													.name Светлана Павленко
+													.spec Копирайтер.
+											.blog-post__watched
+												span.icon.icon-eye
+												span 999
+		.pad-md
+			.container
+				.row
+					.col-md-3
+					.col-md-9
+						h2.small: b Мы пишем книги
+						.ba-book
+							.dt.vam
+								.dtc
+									p Книга о современном маркетинге которая заставит пересмотреть Ваш взгляд на продвижение сайтов и рекламу. 
+									a(href="#").btn.btn--red-sh Подробнее
+								.dtc: img(src="img/big-about/book-small.png", alt="")
+
+
+
+
+
+

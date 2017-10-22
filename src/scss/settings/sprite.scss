@@ -1,16 +1,14 @@
-/*
-SCSS variables are information about icon's compiled state, stored under its original file name
-
-.icon-home {
-  width: $icon-home-width;
-}
-
-The large array-like variables contain all information about a single icon
-$icon-home: x y offset_x offset_y width height total_width total_height image_path;
-
-At the bottom of this section, we provide information about the spritesheet itself
-$spritesheet: width height image $spritesheet-sprites;
-*/
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
 $icon-100pgar-name: 'icon-100pgar';
 $icon-100pgar-x: 71px;
 $icon-100pgar-y: 0px;
@@ -952,32 +950,30 @@ $spritesheet-image: '../img/icon-set.png';
 $spritesheet-sprites: ($icon-100pgar, $icon-adobe, $icon-akiwa, $icon-arr-toright, $icon-audits, $icon-best-blog, $icon-client, $icon-clip, $icon-copywrighting, $icon-corpport, $icon-danger, $icon-design, $icon-eye-white, $icon-eye, $icon-fb, $icon-freeanaliz, $icon-galka-gray-sm, $icon-galka-white-sm, $icon-galka, $icon-glob, $icon-google, $icon-gplus, $icon-graph, $icon-grow, $icon-in, $icon-info-bold, $icon-info, $icon-inst, $icon-interesting-video, $icon-knopka, $icon-lidgen, $icon-lm-1-sm, $icon-lm-1, $icon-lm-2-sm, $icon-lm-2, $icon-lm-3-sm, $icon-lm-3, $icon-lm-4-sm, $icon-lm-4, $icon-lm-5-sm, $icon-lm-5, $icon-lm-6-sm, $icon-lm-6, $icon-lm-7-sm, $icon-lm-7, $icon-lm-8-sm, $icon-lm-8, $icon-lm-9-sm, $icon-lm-9, $icon-lm-closed, $icon-lm-open, $icon-main-form, $icon-marker-gray, $icon-marker-orange, $icon-newspaper-sm, $icon-newspaper, $icon-phone-gray, $icon-post-video, $icon-purse, $icon-red-arr, $icon-red-star, $icon-rouble, $icon-shester, $icon-sites-sm, $icon-sites, $icon-sup-1, $icon-sup-2, $icon-sup-3, $icon-sup-4, $icon-sup-5, $icon-sup-6, $icon-sup-newspaper, $icon-toright-red, $icon-toright, $icon-triangle, $icon-twitter, $icon-urgently, $icon-vacancy-person, $icon-vacancy, $icon-vk, $icon-white-star-, $icon-white-star, $icon-window, $icon-ya, $icon-yandex, );
 $spritesheet: (352px, 345px, '../img/icon-set.png', $spritesheet-sprites, );
 
-/*
-The provided mixins are intended to be used with the array-like variables
-
-.icon-home {
-  @include sprite-width($icon-home);
-}
-
-.icon-email {
-  @include sprite($icon-email);
-}
-
-Example usage in HTML:
-
-`display: block` sprite:
-<div class="icon-home"></div>
-
-To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
-
-// CSS
-.icon {
-  display: inline-block;
-}
-
-// HTML
-<i class="icon icon-home"></i>
-*/
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
 @mixin sprite-width($sprite) {
   width: nth($sprite, 5);
 }
@@ -1004,12 +1000,10 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   @include sprite-height($sprite);
 }
 
-/*
-The `sprites` mixin generates identical output to the CSS template
-  but can be overridden inside of SCSS
-
-@include sprites($spritesheet-sprites);
-*/
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
 @mixin sprites($sprites) {
   @each $sprite in $sprites {
     $sprite-name: nth($sprite, 10);
